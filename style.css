@@ -1,18 +1,147 @@
-body {
-background-color: lightblue;
+:root{
+    --maincolor: royalblue;
+    --secondarycolor: rgb(184, 184, 184);
 }
 
-h1 {
-color: navy;
-margin-left: 20px;
+@media only screen and (max-width:425px) {
+    .skills{
+        justify-content: center;
+    }
 }
-p{
-    color: deepskyblue;
-    background-color: navy;
+
+@media only screen and (min-width:425px) {
+    .skills{
+        justify-content: space-between;
+    }
 }
-img{
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: var(--maincolor);
+    padding: 20px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+header h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+nav{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    padding: 0 10px;
+}
+nav a:hover{
+    color: white;
+}
+main{
+    background-color: var(--secondarycolor);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    padding:  5% 10%;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 40px;
+    font-size: larger;
+}
+main h1{
+    color: var(--maincolor);
+}
+main button{
+    padding: 10px;
+    background-color: var(--maincolor);
+    color: white;
+}
+main img{
+    width: 250px;
+    border: 7px solid var(--maincolor);
+    border-radius: 50%;
+}
+section{
+    background-color: var(--maincolor);
+    padding: 20px;
+
+}
+.skills{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.sbox{
+    background-color: var(--secondarycolor);
+    height: 300px;
     width: 200px;
+    border: 2px solid black;
 }
-.logo{
-    float: right;
+.sbox h1{
+    background-color: var(--maincolor);
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+aside{
+    background-color: var(--secondarycolor);
+    padding: 20px;
+}
+.certificates{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cbox{
+    background-color: var(--maincolor);
+    height: 200px;
+    width: 300px;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 40px;
+}
+.cbox h1{
+    background-color: var(--secondarycolor);
+    color: black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+article{
+    background-color: var(--maincolor);
+    padding: 20px;
+    list-style: square;
+}
+article h3{
+    color: var(--secondarycolor);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    line-height: 30px;
+}
+footer{
+    background-color: var(--secondarycolor);
+    padding: 40px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+footer span{
+    color: var(--maincolor);
 }
