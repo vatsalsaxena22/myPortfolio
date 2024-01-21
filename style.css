@@ -1,69 +1,92 @@
 :root{
-    --maincolor: royalblue;
-    --secondarycolor: rgb(184, 184, 184);
+    --maincolor: teal;
+    --secondarycolor: #F2E7DC;
+    --textcolorone: #A9D9D0;
+    --textcolortwo: #0D0D0D;
 }
 
-@media only screen and (max-width:425px) {
+
+@media only screen and (max-width:568px) {
+    
+    header h1{
+        padding: 3%;
+        background-color: var(--maincolor);
+        color: var(--secondarycolor);
+        font-style: italic;
+    }
+    nav{
+        background-color: var(--maincolor);
+        display: flex;
+        justify-content: space-around;
+        border: solid black;
+        border-width: 2px 2px 0 2px;
+    }
+    nav a{
+        text-decoration: none;
+        color: var(--textcolortwo);
+        padding: 3%;
+        font-size: 80%;
+    }
     .skills{
+        justify-content: center;
+    }
+    .certificates{
         justify-content: center;
     }
 }
 
-@media only screen and (min-width:425px) {
+@media only screen and (min-width:569px) {
+    
+    header{
+        background-color: var(--maincolor);
+        padding: 20px;
+        display: flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+    
+    }
+    header h1{
+        padding: 0;
+        color: var(--secondarycolor);
+        font-style: italic;
+    }
+    nav{
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    nav a{
+        color: var(--textcolorone);
+        text-decoration: none;
+        padding: 0 10px;
+    }
+    nav a:hover{
+        color: var(--textcolortwo);
+    }
     .skills{
+        justify-content: space-between;
+    }
+    .certificates{
         justify-content: space-between;
     }
 }
 
 
-
-
-
-
-
-
-
-
-
-
 *{
     margin: 0;
     padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-header{
-    background-color: var(--maincolor);
-    padding: 20px;
-    display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
-}
-header h1{
-    font-family: 'Courier New', Courier, monospace;
-}
-nav{
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
-nav a{
-    color: black;
-    text-decoration: none;
-    padding: 0 10px;
-}
-nav a:hover{
-    color: white;
-}
 main{
     background-color: var(--secondarycolor);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap-reverse;
-    padding:  5% 10%;
+    padding:  8% 10%;
     align-items: center;
-    font-family: 'Courier New', Courier, monospace;
-    line-height: 40px;
-    font-size: larger;
+    line-height: 200%;
+    font-size:x-large;
 }
 main h1{
     color: var(--maincolor);
@@ -72,11 +95,64 @@ main button{
     padding: 10px;
     background-color: var(--maincolor);
     color: white;
+    font-size: medium;
+}
+main button:hover{
+    background-color: var(--secondarycolor);
+    color: var(--maincolor);
 }
 main img{
-    width: 250px;
+    width: 280px;
     border: 7px solid var(--maincolor);
     border-radius: 50%;
+}
+
+#abc{
+    display: none;
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    background-color: var(--secondarycolor);
+    outline: 2px solid;
+    border: 10px solid var(--maincolor);
+
+}
+#close{
+    border: 2px solid;
+    position: absolute;
+    right: 0;
+    padding: 5px;
+}
+#close:hover{
+    background-color: red;
+}
+.inner{
+    margin: 5%;
+    height: 50%;
+    color: var(--textcolortwo);
+}
+.inner a{
+    color: var(--maincolor);
+}
+
+.top{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    padding: 10px;
+    background-color: var(--maincolor);
+    border: 2px solid var(--textcolortwo);
+    border-radius: 8%;
+    opacity: 70%;
+}
+.top:hover{
+    opacity: 100%;
+}
+.top a{
+    color: var(--secondarycolor);
+    text-decoration: none;
 }
 section{
     background-color: var(--maincolor);
@@ -93,13 +169,12 @@ section{
     background-color: var(--secondarycolor);
     height: 300px;
     width: 200px;
-    border: 2px solid black;
+    border: 2px solid var(--textcolortwo);
 }
 .sbox h1{
     background-color: var(--maincolor);
-    color: white;
+    color: var(--textcolorone);
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
 }
 aside{
     background-color: var(--secondarycolor);
@@ -108,22 +183,21 @@ aside{
 .certificates{
     display: flex;
     padding: 20px;
-    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 10px;
 }
 .cbox{
     background-color: var(--maincolor);
     height: 200px;
     width: 300px;
-    border: 2px solid black;
+    border: 2px solid var(--textcolortwo);
     text-align: center;
     line-height: 40px;
 }
 .cbox h1{
     background-color: var(--secondarycolor);
-    color: black;
+    color: var(--textcolortwo);
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
 }
 article{
     background-color: var(--maincolor);
@@ -132,7 +206,6 @@ article{
 }
 article h3{
     color: var(--secondarycolor);
-    font-family: 'Courier New', Courier, monospace;
     padding: 20px;
     line-height: 30px;
 }
@@ -140,7 +213,6 @@ footer{
     background-color: var(--secondarycolor);
     padding: 40px;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
 }
 footer span{
     color: var(--maincolor);

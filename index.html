@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <h1>Portfolio</h1>
+        <h1>PORTFOLIO</h1>
 
         <nav>
             <a href="#">Introduction</a>
@@ -26,13 +26,36 @@
             <h3>This is,</h3>
             <h1>Vatsal Saxena</h1>
             <h3>A Web Developer</h3>
-            <button type="button" onclick="alert('Contact me @ vatsalsaxena22@gmail.com')">Contact Me</button>
+            <button type="button" onclick="alert('Contact me at: vatsalsaxena22@gmail.com')">Contact Me</button>
+
+            <button onclick="document.getElementById('abc').style.display = 'block';">My Projects</button>
         </div>
 
         <div class="half">
             <img src="images/Profile.jpg" alt="myPic">
         </div>
     </main>
+
+    <div id="abc">
+        <button id="close" onclick="document.getElementById('abc').style.display = 'none';">&nbsp;x&nbsp;</button>
+        <div class="inner">
+            <h1>Projects</h1>
+            <br><hr><br>
+            <h2>Alphabet Website</h2>
+            <a href="https://alphabet-vs.netlify.app" target="_blank">https://alphabet-vs.netlify.app</a>
+            <br><br>
+            <h2>First School Website</h2>
+            <a href="https://firstschool.netlify.app" target="_blank">https://firstschool.netlify.app</a>
+            <br><br>
+            <h2>My CV</h2>
+            <a href="https://vatsalsaxena.w3spaces.com" target="_blank">https://vatsalsaxena.w3spaces.com</a>
+            <br><br><br><hr>
+        </div>
+    </div>
+
+    <div class="top">
+        <a href="#top">Go to Top</a>
+    </div>
 
     <section>
         <h1>Skills</h1>
@@ -79,6 +102,10 @@
             <div class="cbox">
                 <h1>HTML & CSS</h1>
                 <img src="images/html-css.png" alt="" width="75%">
+            </div>
+            <div class="cbox">
+                <h1>JavaScript</h1>
+                <img src="images/js-certificate.png" alt="" width="75%">
             </div>
        
     </aside>
