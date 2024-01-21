@@ -15,8 +15,9 @@ From the City of Orai in the District Jalaun in Uttar Pradesh.
   3. HTML Advanced - By Programming Hub - 1698744965427
   4. Building a Website - By Programming Hub - 1699000262975
   5. HTML & CSS Zero to Hero (5 Days) - By LetsUpgrade - LUEHTMLNOV1231449
-  6. NIELIT CCC Certificate - GO70B1A9A5906B12
-  7. Appreciation of Digital Literacy - UTJA00055569469
+  6. JavaScript Zero to Hero (5 Days) - By LetsUpgrade - LUEJSDEC1231199
+  7. NIELIT CCC Certificate - GO70B1A9A5906B12
+  8. Appreciation of Digital Literacy - UTJA00055569469
 
 # Other Skills
   Microsoft Office(Basic)
