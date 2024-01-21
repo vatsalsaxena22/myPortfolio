@@ -2,7 +2,7 @@
 A *Web Developer*
 From the City of Orai in the District Jalaun in Uttar Pradesh.
 
-- Visit my Portfolio @ "https://vatsalsaxena22.github.io/myPortfolio/"
+- Visit my Portfolio @ "https://vatsalsaxena22.github.io/myPortfolio"
 
 # Skills
   HTML/HTML5
