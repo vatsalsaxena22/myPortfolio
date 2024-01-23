@@ -117,7 +117,6 @@ main img{
     background-color: var(--secondarycolor);
     outline: 2px solid;
     border: 10px solid var(--maincolor);
-    overflow-y: scroll;
     word-wrap: break-word;
 
 }
@@ -132,8 +131,9 @@ main img{
 }
 .inner{
     margin: 5%;
-    height: 50%;
+    height: 90%;
     color: var(--textcolortwo);
+    overflow-y: scroll;
 }
 .inner a{
     color: var(--maincolor);
