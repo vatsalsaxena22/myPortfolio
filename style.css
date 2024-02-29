@@ -6,70 +6,6 @@
 }
 
 
-@media only screen and (max-width:568px) {
-    
-    header h1{
-        padding: 3%;
-        background-color: var(--maincolor);
-        color: var(--secondarycolor);
-        font-style: italic;
-    }
-    nav{
-        background-color: var(--maincolor);
-        display: flex;
-        justify-content: space-around;
-        border: solid black;
-        border-width: 2px 2px 0 2px;
-    }
-    nav a{
-        text-decoration: none;
-        color: var(--textcolortwo);
-        padding: 3%;
-        font-size: 80%;
-    }
-    .skills{
-        justify-content: center;
-    }
-    .certificates{
-        justify-content: center;
-    }
-}
-
-@media only screen and (min-width:569px) {
-    
-    header{
-        background-color: var(--maincolor);
-        padding: 20px;
-        display: flex;
-        justify-content:space-between;
-        flex-wrap: wrap;
-    
-    }
-    header h1{
-        padding: 0;
-        color: var(--secondarycolor);
-        font-style: italic;
-    }
-    nav{
-        padding: 10px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    nav a{
-        color: var(--textcolorone);
-        text-decoration: none;
-        padding: 0 10px;
-    }
-    nav a:hover{
-        color: var(--textcolortwo);
-    }
-    .skills{
-        justify-content: space-between;
-    }
-    .certificates{
-        justify-content: space-between;
-    }
-}
 
 
 *{
@@ -77,7 +13,35 @@
     padding: 0;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
+header{
+    background-color: var(--maincolor);
+    padding: 20px;
+    display: flex;
+    justify-content:space-between;
+}
+header h1{
+    color: var(--secondarycolor);
+    font-style: italic;
+}
+nav{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav a{
+    color: var(--textcolorone);
+    text-decoration: none;
+    padding: 0 10px;
+}
+nav a:hover{
+    color: var(--textcolortwo);
+}
+.skills{
+    justify-content: space-between;
+}
+.certificates{
+    justify-content: space-between;
+}
 main{
     background-color: var(--secondarycolor);
     display: flex;
@@ -109,11 +73,10 @@ main img{
 
 #projects{
     display: none;
-    width: 50%;
-    height: 50%;
+    width: 70%;
     position: fixed;
     top: 25%;
-    left: 25%;
+    left: 15%;
     background-color: var(--secondarycolor);
     outline: 2px solid;
     border: 10px solid var(--maincolor);
@@ -218,4 +181,32 @@ footer{
 }
 footer span{
     color: var(--maincolor);
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+    header h1{
+        padding: 20px;
+    }
+    nav{
+        /* background-color: red; */
+        justify-content: space-between;
+        border-top: 1px solid #000;
+        font-size: small;;
+    }
+    nav a{
+        /* background-color: blue; */
+        color: var(--textcolortwo);
+        padding: 0;
+    }
+    .skills{
+        justify-content: center;
+    }
+    .certificates{
+        justify-content: center;
+    }
 }
