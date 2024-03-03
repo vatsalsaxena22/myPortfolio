@@ -2,12 +2,16 @@
 A *Web Developer*
 From the City of Orai in the District Jalaun in Uttar Pradesh.
 
-- Visit my Portfolio @ "https://vatsalsaxena22.github.io/myPortfolio"
+- Visit my Portfolio @ "https://vatsalsaxena22.github.io/myPortfolio/"
 
 # Skills
-  HTML/HTML5
-  CSS/CSS3
-  Building a website(HTML+CSS)
+  * HTML/HTML5
+  * CSS/CSS3
+  * Building a website (HTML+CSS)
+  * Git/GitHub
+  * JavaScript (ECMA Script 6)
+  * Node.js
+  * React.js
   
 # Certificates
   1. Microsoft Office 3 hours Program - By Skill Course - SQ21T01
@@ -16,8 +20,9 @@ From the City of Orai in the District Jalaun in Uttar Pradesh.
   4. Building a Website - By Programming Hub - 1699000262975
   5. HTML & CSS Zero to Hero (5 Days) - By LetsUpgrade - LUEHTMLNOV1231449
   6. JavaScript Zero to Hero (5 Days) - By LetsUpgrade - LUEJSDEC1231199
-  7. NIELIT CCC Certificate - GO70B1A9A5906B12
-  8. Appreciation of Digital Literacy - UTJA00055569469
+  7. Node.js Zero to Hero (3 Days) - By LetsUpgrade - LUENJSFEB124547
+  8. NIELIT CCC Certificate - GO70B1A9A5906B12
+  9. Appreciation of Digital Literacy - UTJA00055569469
 
 # Other Skills
   Microsoft Office(Basic)

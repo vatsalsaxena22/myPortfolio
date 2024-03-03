@@ -106,10 +106,10 @@ main img{
     position: fixed;
     bottom: 15px;
     right: 15px;
-    padding: 10px;
     background-color: var(--maincolor);
     border: 2px solid var(--textcolortwo);
-    border-radius: 8%;
+    padding: 15px 0px 20px 0px;
+    border-radius: 50%;
     opacity: 70%;
 }
 .top:hover{
@@ -118,6 +118,8 @@ main img{
 .top a{
     color: var(--secondarycolor);
     text-decoration: none;
+    padding: 15px 15px;
+
 }
 section{
     background-color: var(--maincolor);
