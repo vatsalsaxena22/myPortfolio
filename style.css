@@ -1,10 +1,9 @@
 :root{
-    --maincolor: teal;
-    --secondarycolor: #F2E7DC;
-    --textcolorone: #A9D9D0;
-    --textcolortwo: #0D0D0D;
+    --color1: teal;
+    --color2: #F2E7DC;
+    --color3: #A9D9D0;
+    --color4: #0D0D0D;
 }
-
 
 
 
@@ -14,13 +13,13 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 header{
-    background-color: var(--maincolor);
+    background-color: var(--color1);
     padding: 20px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 header h1{
-    color: var(--secondarycolor);
+    color: var(--color2);
     font-style: italic;
 }
 nav{
@@ -29,12 +28,12 @@ nav{
     flex-wrap: wrap;
 }
 nav a{
-    color: var(--textcolorone);
+    color: var(--color3);
     text-decoration: none;
     padding: 0 10px;
 }
 nav a:hover{
-    color: var(--textcolortwo);
+    color: var(--color4);
 }
 .skills{
     justify-content: space-between;
@@ -43,7 +42,7 @@ nav a:hover{
     justify-content: space-between;
 }
 main{
-    background-color: var(--secondarycolor);
+    background-color: var(--color2);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap-reverse;
@@ -53,21 +52,24 @@ main{
     font-size:x-large;
 }
 main h1{
-    color: var(--maincolor);
+    color: var(--color1);
+}
+main h3{
+    color: var(--color4);
 }
 main button{
     padding: 10px;
-    background-color: var(--maincolor);
-    color: white;
+    background-color: var(--color1);
+    color: var(--color3);
     font-size: medium;
 }
 main button:hover{
-    background-color: var(--secondarycolor);
-    color: var(--maincolor);
+    background-color: var(--color2);
+    color: var(--color1);
 }
 main img{
     width: 280px;
-    border: 7px solid var(--maincolor);
+    border: 7px solid var(--color1);
     border-radius: 50%;
 }
 
@@ -77,9 +79,9 @@ main img{
     position: fixed;
     top: 25%;
     left: 15%;
-    background-color: var(--secondarycolor);
+    background-color: var(--color2);
     outline: 2px solid;
-    border: 10px solid var(--maincolor);
+    border: 10px solid var(--color1);
     word-wrap: break-word;
 
 }
@@ -95,36 +97,37 @@ main img{
 .inner{
     margin: 5%;
     height: 90%;
-    color: var(--textcolortwo);
+    color: var(--color4);
     overflow-y: scroll;
 }
 .inner a{
-    color: var(--maincolor);
+    color: var(--color1);
 }
 
 .top{
     position: fixed;
     bottom: 15px;
     right: 15px;
-    background-color: var(--maincolor);
-    border: 2px solid var(--textcolortwo);
-    padding: 15px 0px 20px 0px;
+    background-color: var(--color2);
+    border: 2px solid var(--color4);
     border-radius: 50%;
     opacity: 70%;
+    padding: 5px;
 }
 .top:hover{
     opacity: 100%;
 }
 .top a{
-    color: var(--secondarycolor);
+    color: var(--color1);
     text-decoration: none;
-    padding: 15px 15px;
+    padding: 5px;
+    font-size: xx-large;
 
 }
 section{
-    background-color: var(--maincolor);
+    background-color: var(--color1);
     padding: 20px;
-
+    color: var(--color3);
 }
 .skills{
     display: flex;
@@ -133,19 +136,20 @@ section{
     gap: 10px;
 }
 .sbox{
-    background-color: var(--secondarycolor);
+    background-color: var(--color2);
     height: 300px;
     width: 200px;
-    border: 2px solid var(--textcolortwo);
+    border: 2px solid var(--color4);
 }
 .sbox h1{
-    background-color: var(--maincolor);
-    color: var(--textcolorone);
+    background-color: var(--color1);
+    color: var(--color3);
     text-align: center;
 }
 aside{
-    background-color: var(--secondarycolor);
+    background-color: var(--color2);
     padding: 20px;
+    color: var(--color4);
 }
 .certificates{
     display: flex;
@@ -154,35 +158,37 @@ aside{
     gap: 10px;
 }
 .cbox{
-    background-color: var(--maincolor);
+    background-color: var(--color1);
     height: 200px;
     width: 300px;
-    border: 2px solid var(--textcolortwo);
+    border: 2px solid var(--color4);
     text-align: center;
     line-height: 40px;
 }
 .cbox h1{
-    background-color: var(--secondarycolor);
-    color: var(--textcolortwo);
+    background-color: var(--color2);
+    color: var(--color4);
     text-align: center;
 }
 article{
-    background-color: var(--maincolor);
+    background-color: var(--color1);
+    color: var(--color2);
     padding: 20px;
     list-style: square;
 }
 article h3{
-    color: var(--secondarycolor);
+    color: var(--color2);
     padding: 20px;
     line-height: 30px;
 }
 footer{
-    background-color: var(--secondarycolor);
+    background-color: var(--color2);
+    color: var(--color4);
     padding: 40px;
     text-align: center;
 }
 footer span{
-    color: var(--maincolor);
+    color: var(--color1);
 }
 
 @media screen and (max-width: 600px) {
@@ -195,14 +201,12 @@ footer span{
         padding: 20px;
     }
     nav{
-        /* background-color: red; */
         justify-content: space-between;
-        border-top: 1px solid #000;
-        font-size: small;;
+        border-top: 1px solid var(--color4);
+        font-size: small;
     }
     nav a{
-        /* background-color: blue; */
-        color: var(--textcolortwo);
+        color: var(--color4);
         padding: 0;
     }
     .skills{
