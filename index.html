@@ -38,7 +38,8 @@
     </main>
 
     <div id="projects">
-        <button id="close" onclick="document.getElementById('projects').style.display = 'none';"><i class="fa-solid fa-close"></i></button>
+        <button id="close" onclick="
+            document.getElementById('projects').style.display = 'none';"><i class="fa-solid fa-close"></i></button>
         <div class="inner">
             <h1><i class="fa-solid fa-code"></i> Projects</h1>
             <br><hr><br>
@@ -50,94 +51,155 @@
             <br><br>
             <h2>My CV</h2>
             <a href="https://vatsalsaxena.w3spaces.com" target="_blank">https://vatsalsaxena.w3spaces.com</a>
-            <br><br><br><hr>
         </div>
     </div>
 
     <div class="top">
-        <a href="#top"><i class="fa-solid fa-circle-up"></i></a>
+        <a href="#top"><i class="fa-solid fa-circle-arrow-up"></i></a>
     </div>
 
-    <section>
-        <h1><i class="fa-solid fa-star"></i> Skills</h1>
-        <div class="skills" id="nav-s">
+    <div class="themes">
+        <div id="toogle-themes">
+            <button class="theme-colors tc-maroon" title="Maroon" onclick="changeMaroon()">&nbsp;</button>
+            <button class="theme-colors tc-teal" title="Teal" onclick="changeTeal()">&nbsp;</button>
+            <button class="theme-colors tc-royalblue" title="Royal Blue" onclick="changeRoyalblue()">&nbsp;</button>
+            <button class="theme-colors tc-purple" title="Purple" onclick="changePurple()">&nbsp;</button>
+            <button class="themes-btn" title="Dark" onclick="changeDark()"><i class="fa-solid fa-moon"></i></button>
+            <button class="themes-btn" title="Light" onclick="changeLight()"><i class="fa-solid fa-sun"></i></button>
+        </div>
+        <button class="themes-btn" title="Themes" onclick="showThemes()"><i class="fa-solid fa-palette"></i></button>
+    </div>
+
+    <div class="skills-body" id="nav-s">
+        <h2><i class="fa-solid fa-star"></i> Skills</h2>
+        <div class="skills">
             <div class="sbox">
                 <br>
-                <h1>HTML/HTML5</h1><br>
+                <h2>HTML/HTML5</h2><br>
                 <img src="images/HTML5_badge.png" alt="html" width="100%">
             </div>
             <div class="sbox">
                 <br>
-                <h1>CSS/CSS3</h1><br>
+                <h2>CSS/CSS3</h2><br>
                 <img src="images/CSS3_badge.png" alt="css" width="100%">
             </div>
             <div class="sbox">
                 <br>
-                <h1>JavaScript</h1><br>
+                <h2>JavaScript</h2><br>
                 <img src="images/JS_badge.png" alt="js" width="100%">
             </div>
             <div class="sbox">
                 <br>
-                <h1>Git & GitHub</h1><br>
+                <h2>Git & GitHub</h2><br>
                 <img src="images/git.png" alt="git" width="100%" height="35%">
                 <img src="images/github.png" alt="github" width="100%" height="35%">
             </div>
             <div class="sbox">
                 <br>
-                <h1>Node.js</h1><br>
+                <h2>Node.js</h2><br>
                 <img src="images/nodejs_logo.png" alt="node.js" width="100%">
             </div>
             <div class="sbox">
                 <br>
-                <h1>React.js</h1><br>
+                <h2>React.js</h2><br>
                 <img src="images/react_logo.png" alt="js" width="100%">
             </div>
         </div>
-    </section>
+    </div>
 
-    <aside>
-        <h1><i class="fa-solid fa-certificate"></i> Certificates</h1>
-        <div class="certificates" id="nav-c">
+    <div class="certificates-body" id="nav-c">
+        <h2><i class="fa-solid fa-certificate"></i> Certificates</h2>
+        <div class="certificates">
             <div class="cbox">
-                <h1>HTML</h1>
+                <h2>HTML</h2>
                 <img src="images/html-certificate.png" alt="html" width="75%">
             </div>
             <div class="cbox">
-                <h1>HTML Advanced</h1>
+                <h2>HTML Advanced</h2>
                 <img src="images/html-ad-certificate.png" alt="html Advanced" width="75%">
             </div>
             <div class="cbox">
-                <h1>Building a Website</h1>
+                <h2>Building a Website</h2>
                 <img src="images/build-certificate.png" alt="build-certificate" width="75%">
             </div>
             <div class="cbox">
-                <h1>HTML & CSS</h1>
+                <h2>HTML & CSS</h2>
                 <img src="images/html-css.png" alt="" width="75%">
             </div>
             <div class="cbox">
-                <h1>JavaScript</h1>
+                <h2>JavaScript</h2>
                 <img src="images/js-certificate.png" alt="" width="75%">
             </div>
             <div class="cbox">
-                <h1>Node.js</h1>
+                <h2>Node.js</h2>
                 <img src="images/node-certificate.png" alt="" width="75%">
             </div>
-       
-    </aside>
+        </div>
+    </div>
 
-    <article id="nav-e">
-        <h1><i class="fa-solid fa-pencil"></i> Education</h1>
+    <div class="education-body" id="nav-e">
+        <h2><i class="fa-solid fa-pencil"></i> Education</h2>
         <h3>
             <li>Secondary School (CBSE) - 2017</li>
             <li>Senior Secondary School (CBSE) - 2019</li>
             <li>Graduation - B.Sc. from Bundelkhand University - 2023</li>
         </h3>
-    </article>
+    </div>
 
     <footer>
         <h4>This Webpage is completely developed & designed by <br><span>Mr. Vatsal Saxena</span>.</h4>
     </footer>
 
+    <script>
+        function showThemes(){
+            const themeButtons = document.getElementById('toogle-themes');
+
+            if (themeButtons.style.display == 'none'){
+                themeButtons.style.display = 'block';
+            } else {
+                themeButtons.style.display = 'none';
+            }
+        }
+
+        function changeDark(){
+            const root = document.documentElement;
+
+            root.style.setProperty('--color1', '#111');
+            root.style.setProperty('--color4', '#fff');
+        }
+
+        function changeLight(){
+            const root = document.documentElement;
+
+            root.style.setProperty('--color1', '#fff');
+            root.style.setProperty('--color4', '#111');
+        }
+
+        function changeMaroon(){
+            const root = document.documentElement;
+
+            root.style.setProperty('--color2', 'maroon');
+        }
+
+        function changeTeal(){
+            const root = document.documentElement;
+
+            root.style.setProperty('--color2', 'teal');
+        }
+
+        function changeRoyalblue(){
+            const root = document.documentElement;
+
+            root.style.setProperty('--color2', 'royalblue');
+        }
+
+        function changePurple(){
+            const root = document.documentElement;
+
+            root.style.setProperty('--color2', 'purple');
+        }
+
+    </script>
 </body>
 
 </html>

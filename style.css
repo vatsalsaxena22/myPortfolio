@@ -1,8 +1,8 @@
 :root{
-    --color1: teal;
-    --color2: #F2E7DC;
-    --color3: #A9D9D0;
-    --color4: #0D0D0D;
+    --color1: #111;
+    --color2: purple;
+    --color3: #777;
+    --color4: #fff;
 }
 
 
@@ -12,11 +12,16 @@
     padding: 0;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+/* Header */
 header{
     background-color: var(--color1);
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    border-bottom: 3px solid var(--color2);
+    position: sticky;
+    top: 0;
 }
 header h1{
     color: var(--color2);
@@ -28,21 +33,18 @@ nav{
     flex-wrap: wrap;
 }
 nav a{
-    color: var(--color3);
+    color: var(--color2);
     text-decoration: none;
     padding: 0 10px;
 }
 nav a:hover{
     color: var(--color4);
+    transition: all 0.7s ease;
 }
-.skills{
-    justify-content: space-between;
-}
-.certificates{
-    justify-content: space-between;
-}
+
+/* Main */
 main{
-    background-color: var(--color2);
+    background-color: var(--color1);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap-reverse;
@@ -52,40 +54,42 @@ main{
     font-size:x-large;
 }
 main h1{
-    color: var(--color1);
+    color: var(--color2);
 }
 main h3{
-    color: var(--color4);
+    color: var(--color3);
 }
 main button{
     padding: 10px;
-    background-color: var(--color1);
-    color: var(--color3);
-    font-size: medium;
-}
-main button:hover{
     background-color: var(--color2);
     color: var(--color1);
+    font-size: medium;
+    border: 2px solid var(--color2);
+    transition: all 1s ease;
+}
+main button:hover{
+    background-color: var(--color1);
+    color: var(--color3);
 }
 main img{
     width: 280px;
-    border: 7px solid var(--color1);
+    border: 7px solid var(--color2);
     border-radius: 50%;
 }
 
+/* Projects */
 #projects{
     display: none;
     width: 70%;
     position: fixed;
     top: 25%;
     left: 15%;
-    background-color: var(--color2);
-    outline: 2px solid;
-    border: 10px solid var(--color1);
+    background-color: var(--color1);
+    border: 10px solid var(--color2);
     word-wrap: break-word;
-
 }
 #close{
+    background-color: var(--color3);
     border: 2px solid;
     position: absolute;
     right: 0;
@@ -96,41 +100,95 @@ main img{
 }
 .inner{
     margin: 5%;
-    height: 90%;
-    color: var(--color4);
-    overflow-y: scroll;
+    color: var(--color2);
+}
+.inner hr{
+    border-color: var(--color2);
 }
 .inner a{
-    color: var(--color1);
+    color: var(--color3);
+}
+.inner a:hover{
+    color: var(--color4);
 }
 
+/* Go to Top */
 .top{
     position: fixed;
     bottom: 15px;
     right: 15px;
-    background-color: var(--color2);
-    border: 2px solid var(--color4);
+    background-color: var(--color1);
+    padding: 1px 2px 0 2px;
+    border: 2px solid var(--color2);
     border-radius: 50%;
-    opacity: 70%;
-    padding: 5px;
 }
 .top:hover{
-    opacity: 100%;
+    transition: all 0.7s ease;
 }
 .top a{
-    color: var(--color1);
+    font-size: 36px;
+    color: var(--color2);
     text-decoration: none;
-    padding: 5px;
-    font-size: xx-large;
-
 }
-section{
+
+/* Themes */
+.themes{
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+}
+#toogle-themes{
+    display: none;
+}
+.themes-btn{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 5px;
+    color: var(--color2);
+    background-color: var(--color1);
+    border: 2px solid var(--color2);
+    border-radius: 50%;
+}
+.themes-btn:hover{
+    transition: all 2s ease;
+    background-color: var(--color2);
+    color: var(--color1);
+}
+.theme-colors{
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 5px;
+    color: var(--color2);
+    background-color: var(--color1);
+    border: 2px solid var(--color2);
+    border-radius: 50%;
+}
+.tc-maroon{
+    background-color: maroon;
+}
+.tc-teal{
+    background-color: teal;
+}
+.tc-royalblue{
+    background-color: royalblue;
+}
+.tc-purple{
+    background-color: purple;
+}
+
+/* Skills */
+.skills-body{
+    border-top: 3px solid var(--color2);
     background-color: var(--color1);
     padding: 20px;
-    color: var(--color3);
+    color: var(--color2);
 }
 .skills{
     display: flex;
+    justify-content: space-between;
     padding: 20px;
     flex-wrap: wrap;
     gap: 10px;
@@ -139,20 +197,24 @@ section{
     background-color: var(--color2);
     height: 300px;
     width: 200px;
-    border: 2px solid var(--color4);
+    border: 2px solid var(--color3);
 }
-.sbox h1{
+.sbox h2{
     background-color: var(--color1);
     color: var(--color3);
     text-align: center;
 }
-aside{
-    background-color: var(--color2);
+
+/* Certificates */
+.certificates-body{
+    border-top: 3px solid var(--color2);
+    background-color: var(--color1);
     padding: 20px;
-    color: var(--color4);
+    color: var(--color2);
 }
 .certificates{
     display: flex;
+    justify-content: space-between;
     padding: 20px;
     flex-wrap: wrap;
     gap: 10px;
@@ -161,36 +223,41 @@ aside{
     background-color: var(--color1);
     height: 200px;
     width: 300px;
-    border: 2px solid var(--color4);
+    border: 2px solid var(--color3);
     text-align: center;
     line-height: 40px;
 }
-.cbox h1{
+.cbox h2{
     background-color: var(--color2);
-    color: var(--color4);
+    color: var(--color1);
     text-align: center;
 }
-article{
-    background-color: var(--color1);
-    color: var(--color2);
+
+/* Education */
+.education-body{
+    background-color: var(--color2);
+    color: var(--color1);
     padding: 20px;
     list-style: square;
 }
-article h3{
-    color: var(--color2);
+.education-body h3{
+    color: var(--color1);
     padding: 20px;
     line-height: 30px;
 }
+
+/* Footer */
 footer{
-    background-color: var(--color2);
-    color: var(--color4);
+    background-color: var(--color1);
+    color: var(--color3);
     padding: 40px;
     text-align: center;
 }
 footer span{
-    color: var(--color1);
+    color: var(--color2);
 }
 
+/* CSS for Mobile */
 @media screen and (max-width: 600px) {
     header{
         display: block;
@@ -202,11 +269,11 @@ footer span{
     }
     nav{
         justify-content: space-between;
-        border-top: 1px solid var(--color4);
+        border-top: 3px solid var(--color2);
         font-size: small;
     }
     nav a{
-        color: var(--color4);
+        color: var(--color2);
         padding: 0;
     }
     .skills{
