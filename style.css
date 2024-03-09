@@ -22,6 +22,7 @@ header{
     border-bottom: 3px solid var(--color2);
     position: sticky;
     top: 0;
+    box-shadow: 0 5px 20px 5px var(--color2);
 }
 header h1{
     color: var(--color2);
@@ -121,6 +122,7 @@ main img{
 .top button{
     width: 50px;
     height: 50px;
+    margin: 5px;
     border: 2px solid var(--color2);
     border-radius: 50%;
     background-color: var(--color1);
@@ -184,6 +186,7 @@ main img{
     background-color: var(--color1);
     padding: 20px;
     color: var(--color2);
+    box-shadow: 0 -5px 20px 5px var(--color2);
 }
 .skills{
     display: flex;
