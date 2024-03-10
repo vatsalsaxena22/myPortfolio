@@ -20,9 +20,10 @@ From the City of Orai in the District Jalaun in Uttar Pradesh.
   4. Building a Website - By Programming Hub - 1699000262975
   5. HTML & CSS Zero to Hero (5 Days) - By LetsUpgrade - LUEHTMLNOV1231449
   6. JavaScript Zero to Hero (5 Days) - By LetsUpgrade - LUEJSDEC1231199
-  7. Node.js Zero to Hero (3 Days) - By LetsUpgrade - LUENJSFEB124547
-  8. NIELIT CCC Certificate - GO70B1A9A5906B12
-  9. Appreciation of Digital Literacy - UTJA00055569469
+  7. Introduction to JavaScript - By Sololearn - CC-KLQCRZG5
+  8. Node.js Zero to Hero (3 Days) - By LetsUpgrade - LUENJSFEB124547
+  9. NIELIT CCC Certificate - GO70B1A9A5906B12
+  10. Appreciation of Digital Literacy - UTJA00055569469
 
 # Other Skills
   Microsoft Office(Basic)
