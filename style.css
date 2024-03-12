@@ -49,10 +49,13 @@ main{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap-reverse;
-    padding:  8% 10%;
+    padding:  10%;
     align-items: center;
     line-height: 200%;
     font-size: x-large;
+    background-image: url(./images/background-dark.jpeg);
+    background-size: cover;
+    
 }
 main h1{
     color: var(--color2);
@@ -76,6 +79,27 @@ main img{
     width: 280px;
     border: 7px solid var(--color2);
     border-radius: 50%;
+    animation-name: lightShow;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes lightShow {
+    0%{
+        box-shadow: 5px -5px 10px 10px var(--color2);
+    }
+    25%{
+        box-shadow: 5px 5px 10px 10px var(--color2);
+    }
+    50%{
+        box-shadow: -5px 5px 10px 10px var(--color2);
+    }
+    75%{
+        box-shadow: -5px -5px 10px 10px var(--color2);
+    }
+    100%{
+        box-shadow: 5px -5px 10px 10px var(--color2);
+    }
 }
 
 /* Projects */

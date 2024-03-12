@@ -22,7 +22,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-bg">
         <div class="half">
             <h3>This is,</h3>
             <h1>Vatsal Saxena</h1>
@@ -170,6 +170,7 @@
 
             root.style.setProperty('--color1', '#111');
             root.style.setProperty('--color4', '#fff');
+            document.getElementById('main-bg').style.backgroundImage = 'url(./images/background-dark.jpeg)';
         }
 
         function changeLight(){
@@ -177,6 +178,7 @@
 
             root.style.setProperty('--color1', '#fff');
             root.style.setProperty('--color4', '#111');
+            document.getElementById('main-bg').style.backgroundImage = 'url(./images/background-light.jpeg)';
         }
 
         function changeMaroon(){
