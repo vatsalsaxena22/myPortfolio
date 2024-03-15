@@ -25,19 +25,23 @@ From the City of Orai in the District Jalaun in Uttar Pradesh.
   9. NIELIT CCC Certificate - GO70B1A9A5906B12
   10. Appreciation of Digital Literacy - UTJA00055569469
 
-# Other Skills
-  Microsoft Office(Basic)
-    Including-
-              Microsoft Word
-              Microsoft Excel
-              Microsoft Powerpoint
-  Libre Office(Basic)
-    Including-
-              LibreOffice Writer
-              LibreOffice Calc
-              LibreOffice Impress
+# Other Skills/Technologies Known
+  1. W3.CSS Framework - By W3schools
+  2. W3.JS Library - By W3schools
+  3. Fonts - Google Fonts
+  4. Icons - Font Awesome
+  5. Web Hosting - Netlify
+  6. C.L.I. (Command Line Interface)
+  7. Microsoft Office(Basic)-
+    * Microsoft Word
+    * Microsoft Excel
+    * Microsoft Powerpoint
+  8. Libre Office(Basic)-
+    * LibreOffice Writer
+    * LibreOffice Calc
+    * LibreOffice Impress
 
 # Education
-  Secondary School (CBSE) - 2017
-  Senior Secondary School (CBSE) - 2019
-  Graduation - B.Sc. from Bundelkhand University - 2023
+  * Senior Secondary School (CBSE) - 2017
+  * Higher Senior Secondary School (CBSE) - 2019
+  * Graduation - B.Sc. from Bundelkhand University - 2023

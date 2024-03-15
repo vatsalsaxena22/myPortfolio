@@ -27,6 +27,9 @@
             <h3>This is,</h3>
             <h1>Vatsal Saxena</h1>
             <h3>A Web Developer</h3>
+
+            <button class="download"><a href="./CV.pdf" download>Download CV</a></button>
+
             <button type="button" onclick="alert('Contact me at: vatsalsaxena22@gmail.com')">Contact Me</button>
 
             <button onclick="document.getElementById('projects').style.display = 'block';">My Projects</button>
@@ -39,18 +42,44 @@
 
     <div id="projects">
         <button id="close" onclick="
-            document.getElementById('projects').style.display = 'none';"><i class="fa-solid fa-close"></i></button>
+            document.getElementById('projects').style.display = 'none';">
+            <i class="fa-solid fa-close"></i>
+        </button>
+        <h1><i class="fa-solid fa-code"></i> Projects</h1>
+        <hr>
         <div class="inner">
-            <h1><i class="fa-solid fa-code"></i> Projects</h1>
-            <br><hr><br>
-            <h2>Alphabet Website</h2>
-            <a href="https://alphabet-v2.netlify.app" target="_blank">https://alphabet-v2.netlify.app</a>
-            <br><br>
-            <h2>First School Website</h2>
-            <a href="https://firstschool.netlify.app" target="_blank">https://firstschool.netlify.app</a>
-            <br><br>
-            <h2>My CV</h2>
-            <a href="https://vatsalsaxena.w3spaces.com" target="_blank">https://vatsalsaxena.w3spaces.com</a>
+            <div class="inner-box">
+                <h3>Alphabet Website</h3>
+                <a href="https://alphabet-v2.netlify.app" target="_blank"><img src="./images/Alphabet v2.0.png" alt="Alphabet"></a>
+                <a href="https://alphabet-v2.netlify.app" target="_blank">https://alphabet-v2.netlify.app</a>
+            </div>
+            <div class="inner-box">
+                <h3>First School Website</h3>
+                <a href="https://firstschool.netlify.app" target="_blank"><img src=".//images/First School.png" alt="firstschool"></a>
+                <a href="https://firstschool.netlify.app" target="_blank">https://firstschool.netlify.app</a>
+            </div>
+            <div class="inner-box">
+                <h3>Stone Paper Scissors Game</h3>
+                <a href="https://firstschool.netlify.app/spsgame" target="_blank"><img src="./images/spsgame.png" alt="SPS Game"></a>
+                <a href="https://firstschool.netlify.app/spsgame" target="_blank">https://firstschool.netlify.app/spsgame</a>
+            </div>
+            <div class="inner-box">
+                <h3>My CV</h3>
+                <a href="https://vatsalsaxena.w3spaces.com" target="_blank"><img src="./images/myCV.png" alt="My CV"></a>
+                <a href="https://vatsalsaxena.w3spaces.com" target="_blank">https://vatsalsaxena.w3spaces.com</a>
+            </div>
+            <div class="inner-box">
+                <h3>Calculator App</h3>
+                <img src="./images/Calculator App.png" alt="Calculator">
+            </div>
+            <div class="inner-box">
+                <h3>NCERT Books Webpage Clone</h3>
+                <img src="./images/NCERT Clone.png" alt="NCERT">
+            </div>
+            <div class="inner-box">
+                <h3>Netflix Homepage Clone</h3>
+                <img src="./images/Netflix Clone.png" alt="Netflix">
+            </div>
         </div>
     </div>
 
@@ -142,16 +171,56 @@
     </div>
 
     <div class="education-body" id="nav-e">
-        <h2><i class="fa-solid fa-pencil"></i> Education</h2>
-        <h3>
-            <li>Higher Secondary School (CBSE)- 2017</li>
-            <li>Senior Secondary School (CBSE)- 2019</li>
-            <li>Graduation - B.Sc. from Bundelkhand University - 2023</li>
-        </h3>
+        <h1><i class="fa-solid fa-pencil"></i> Education</h1>
+        <hr>
+        <div class="education">
+            <h2>Academics -</h2>
+            <ul>
+                <li>Senior Secondary School (CBSE) - 2017</li>
+                <li>Higher Senior Secondary School (CBSE) - 2019</li>
+                <li>Graduation - B.Sc. from Bundelkhand University - 2023</li>
+            </ul>
+            <h2>Other Skills/Technologies Known -</h2>
+            <ol>
+                <li>W3.CSS Framework - By W3schools</li>
+                <li>W3.JS Library - By W3schools</li>
+                <li>Fonts - Google Fonts</li>
+                <li>Icons - Font Awesome</li>
+                <li>Web Hosting - Netlify</li>
+                <li>Microsoft Office -</li>
+                <ul>
+                    <li>MS Word</li>
+                    <li>MS Excel</li>
+                    <li>MS PowerPoint</li>
+                </ul>
+                <li>LibreOffice -</li>
+                <ul>
+                    <li>Writer</li>
+                    <li>Calc</li>
+                    <li>Impress</li>
+                </ul>
+                <li>C.L.I. (Command Line Interface)</li>
+            </ol>
+        </div>
     </div>
 
     <footer>
-        <h4>This Webpage is completely developed & designed by <br><span>Mr. Vatsal Saxena</span>.</h4>
+        <h2><i class="fa-solid fa-globe"></i> About</h2>
+        <h4>This Webpage is developed by <span class="vs">Mr. Vatsal Saxena</span>.</h4>
+        <h3>Technologies Used -</h3>
+        <h4 class="links">
+            <a href="https://html.com/" target="_blank">HTML</a> |
+            <a href="https://www.w3.org/Style/CSS/" target="_blank">CSS</a> |
+            <a href="https://www.javascript.com/" target="_blank">JavaScript</a> |
+            <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>
+        </h4>
+        <h4>Hosted on <span class="links"><a href="https://github.com" target="_blank">GitHub Pages</a></span>.</h4>
+        <h2>
+            <i class="fa-brands fa-google" onclick="alert('Contact me at: vatsalsaxena22@gmail.com')"></i>
+            <a href="https://in.linkedin.com/in/vatsal-saxena-89215629a?trk=people-guest_people_search-card" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Vatsalsaxena22" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.facebook.com/vatsalya.saxena.3/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+        </h2>
     </footer>
 
     <script>

@@ -55,7 +55,6 @@ main{
     font-size: x-large;
     background-image: url(./images/background-dark.jpeg);
     background-size: cover;
-    
 }
 main h1{
     color: var(--color2);
@@ -74,6 +73,14 @@ main button{
 main button:hover{
     background-color: var(--color1);
     color: var(--color3);
+}
+main button a{
+    color: var(--color1);
+    text-decoration: none;
+    background-color: var(--color2);
+}
+.download:hover{
+    background-color: var(--color2);
 }
 main img{
     width: 280px;
@@ -107,11 +114,11 @@ main img{
     display: none;
     width: 70%;
     position: fixed;
-    top: 25%;
+    top: 20%;
     left: 15%;
     background-color: var(--color1);
+    color: var(--color2);
     border: 10px solid var(--color2);
-    word-wrap: break-word;
 }
 #close{
     background-color: var(--color3);
@@ -123,19 +130,42 @@ main img{
 #close:hover{
     background-color: red;
 }
-.inner{
-    margin: 5%;
-    color: var(--color2);
+#projects h1{
+    padding: 10px;
 }
-.inner hr{
+#projects hr{
     border-color: var(--color2);
 }
-.inner a{
-    color: var(--color3);
+.inner{
+    padding: 10px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: var(--color1);
+    overflow-y: scroll;
 }
-.inner a:hover{
+.inner-box{
+    background-color: var(--color2);
+    text-align: center;
+    border: 2px solid var(--color2);
+}
+.inner-box h3{
+    color: var(--color1);
+}
+.inner-box img{
+    width: 400px;
+    height: 200px;
+    display: block;
+}
+.inner-box a{
+    color: var(--color1);
+}
+.inner-box a:hover{
     color: var(--color4);
 }
+
 
 /* Go to Top */
 .top{
@@ -264,22 +294,54 @@ main img{
     background-color: var(--color2);
     color: var(--color1);
     padding: 20px;
-    list-style: square;
 }
-.education-body h3{
-    color: var(--color1);
-    padding: 20px;
-    line-height: 30px;
+.education-body hr{
+    margin: 10px 0;
+    border: 1px solid var(--color1);
+}
+.education{
+    padding: 0 60px;
+}
+.education h2{
+    margin: 10px 0;
+    padding: 10px;
+    background-color: var(--color1);
+    color: var(--color2);
+}
+.education ol{
+    margin-left: 20px;
+    line-height: 2;
+}
+.education ul{
+    margin-left: 20px;
+    list-style: square;
+    line-height: 2;
 }
 
 /* Footer */
 footer{
+    padding: 80px;
     background-color: var(--color1);
     color: var(--color3);
-    padding: 40px;
-    text-align: center;
+    line-height: 2;
 }
-footer span{
+.links a{
+    color: var(--color3);
+    text-decoration: none;
+}
+.links a:hover{
+    color: var(--color2);
+}
+.vs{
+    color: var(--color2);
+}
+.fa-globe{
+    color: var(--color2);
+}
+.fa-brands{
+    color: var(--color3);
+}
+.fa-brands:hover{
     color: var(--color2);
 }
 
@@ -302,6 +364,34 @@ footer span{
         color: var(--color2);
         padding: 0;
         font-weight: bold;
+    }
+    main{
+        background-position: right;
+    }
+    main img{
+        width: 220px;
+    }
+    #projects{
+        width: auto;
+        top: 10%;
+        left: 10%;
+        right: 10%;
+    }
+    #close{
+        background-color: red;
+    }
+    .inner-box{
+        width: 200px;
+    }
+    .inner-box h3{
+        text-wrap: wrap;
+    }
+    .inner-box img{
+        width: 200px;
+        height: 100px;
+    }
+    .inner-box a{
+        word-break: break-all;
     }
     .skills{
         justify-content: center;
