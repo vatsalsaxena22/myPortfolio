@@ -26,9 +26,9 @@
         <div class="half">
             <h3>This is,</h3>
             <h1>Vatsal Saxena</h1>
-            <h3>A Web Developer</h3>
+            <h3>A <span id="element">Web Developer</span></h3>
 
-            <button class="download"><a href="./CV.pdf" download>Download CV</a></button>
+            <a class="download" href="./CV.pdf" download>Download CV</a>
 
             <button type="button" onclick="alert('Contact me at: vatsalsaxena22@gmail.com')">Contact Me</button>
 
@@ -105,33 +105,38 @@
             <div class="sbox">
                 <br>
                 <h2>HTML/HTML5</h2><br>
-                <img src="images/HTML5_badge.png" alt="html" width="100%">
+                <img src="./images/HTML5_badge.png" alt="html" width="100%">
             </div>
             <div class="sbox">
                 <br>
                 <h2>CSS/CSS3</h2><br>
-                <img src="images/CSS3_badge.png" alt="css" width="100%">
+                <img src="./images/CSS3_badge.png" alt="css" width="100%">
             </div>
             <div class="sbox">
                 <br>
                 <h2>JavaScript</h2><br>
-                <img src="images/JS_badge.png" alt="js" width="100%">
+                <img src="./images/JS_badge.png" alt="js" width="100%">
             </div>
             <div class="sbox">
                 <br>
                 <h2>Git & GitHub</h2><br>
-                <img src="images/git.png" alt="git" width="100%" height="40%">
-                <img src="images/github.png" alt="github" width="100%" height="30%">
+                <img src="./images/git.png" alt="git" width="100%" height="40%">
+                <img src="./images/github.png" style="background-color: #fff;" alt="github" width="100%" height="30%">
             </div>
             <div class="sbox">
                 <br>
-                <h2>Node.js</h2><br>
-                <img src="images/nodejs_logo.png" alt="node.js" width="100%">
+                <h2>Bootstrap 5</h2><br>
+                <img src="./images/Bootstrap 5 Logo.png" alt="node.js" width="100%" height="70%">
             </div>
             <div class="sbox">
                 <br>
                 <h2>React.js</h2><br>
-                <img src="images/react_logo.png" alt="js" width="100%">
+                <img class="react" src="./images/react_logo.png" alt="js" width="100%">
+            </div>
+            <div class="sbox">
+                <br>
+                <h2>Node.js</h2><br>
+                <img src="./images/nodejs_logo.png" alt="node.js" width="100%">
             </div>
         </div>
     </div>
@@ -141,35 +146,35 @@
         <div class="certificates">
             <div class="cbox">
                 <h2>HTML</h2>
-                <img src="images/html-certificate.png" alt="html" width="75%">
+                <img src="./images/html-certificate.png" alt="html" width="75%">
             </div>
             <div class="cbox">
                 <h2>HTML Advanced</h2>
-                <img src="images/html-ad-certificate.png" alt="html Advanced" width="75%">
+                <img src="./images/html-ad-certificate.png" alt="html Advanced" width="75%">
             </div>
             <div class="cbox">
                 <h2>Building a Website</h2>
-                <img src="images/build-certificate.png" alt="build-certificate" width="75%">
+                <img src="./images/build-certificate.png" alt="build-certificate" width="75%">
             </div>
             <div class="cbox">
                 <h2>HTML & CSS</h2>
-                <img src="images/html-css.png" alt="" width="75%">
+                <img src="./images/html-css.png" alt="" width="75%">
             </div>
             <div class="cbox">
                 <h2>JavaScript</h2>
-                <img src="images/js-certificate.png" alt="" width="75%">
+                <img src="./images/js-certificate.png" alt="" width="75%">
             </div>
             <div class="cbox">
                 <h2>Introduction to JavaScript</h2>
-                <img src="images/JS-intro-certificate.jpg" alt="" width="75%">
+                <img src="./images/JS-intro-certificate.jpg" alt="" width="75%">
             </div>
             <div class="cbox">
                 <h2>JavaScript Intermediate</h2>
-                <img src="images/js-intermediate.jpg" alt="" width="75%">
+                <img src="./images/js-intermediate.jpg" alt="" width="75%">
             </div>
             <div class="cbox">
                 <h2>Node.js</h2>
-                <img src="images/node-certificate.png" alt="" width="75%">
+                <img src="./images/node-certificate.png" alt="" width="75%">
             </div>
         </div>
     </div>
@@ -191,6 +196,9 @@
                 <li>Fonts - Google Fonts</li>
                 <li>Icons - Font Awesome</li>
                 <li>Web Hosting - Netlify</li>
+                <li>npm (Node Package Manager)</li>
+                <li>Vite - Building JS Application</li>
+                <li>C.L.I. (Command Line Interface)</li>
                 <li>Microsoft Office -</li>
                 <ul>
                     <li>MS Word</li>
@@ -203,7 +211,6 @@
                     <li>Calc</li>
                     <li>Impress</li>
                 </ul>
-                <li>C.L.I. (Command Line Interface)</li>
             </ol>
         </div>
     </div>
@@ -279,6 +286,15 @@
         }
 
     </script>
+
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Front-End Developer', 'Web Developer', 'Programmer', 'Front-End Developer'],
+          typeSpeed: 75, 
+        });
+      </script>
 </body>
 
 </html>
