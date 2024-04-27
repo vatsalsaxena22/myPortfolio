@@ -2,7 +2,6 @@
     --color1: #111;
     --color2: teal;
     --color3: #777;
-    --color4: #fff;
 }
 
 body::-webkit-scrollbar{
@@ -42,8 +41,21 @@ nav a{
     padding: 0 10px;
 }
 nav a:hover{
-    color: var(--color4);
+    color: var(--color3);
     transition: all 0.7s ease;
+}
+.versions-btn{
+    position: fixed;
+    top: 22px;
+    left: 188px;
+    color: var(--color3);
+    background-color: var(--color1);
+    border: none;
+    z-index: 1;
+    font-size: 30px;
+}
+.versions-btn:hover{
+    color: var(--color2);
 }
 
 /* Main */
@@ -71,6 +83,7 @@ main button{
     color: var(--color1);
     font-size: medium;
     border: 2px solid var(--color2);
+    border-radius: 5px;
     transition: all 0.5s ease;
 }
 main button:hover{
@@ -82,16 +95,17 @@ main button a{
     text-decoration: none;
     background-color: var(--color2);
 }
-.download{
+.btn{
     background-color: var(--color2);
     color: var(--color1);
     text-decoration: none;
     padding: 10px;
     font-size: medium;
     border: 2px solid var(--color2);
+    border-radius: 5px;
     transition: all 0.5s ease;
 }
-.download:hover{
+.btn:hover{
     background-color: var(--color1);
     color: var(--color3);
 }
@@ -132,6 +146,7 @@ main img{
     background-color: var(--color1);
     color: var(--color2);
     border: 10px solid var(--color2);
+    border-radius: 5px;
     z-index: 1;
 }
 #close{
@@ -147,9 +162,6 @@ main img{
 #projects h1{
     padding: 10px;
 }
-#projects hr{
-    border-color: var(--color2);
-}
 .inner{
     padding: 20px;
     height: 400px;
@@ -159,6 +171,13 @@ main img{
     gap: 20px;
     background-color: var(--color1);
     overflow-y: scroll;
+}
+.inner-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-bottom: 2px solid var(--color2);
 }
 .inner::-webkit-scrollbar{
     color: var(--color2);
@@ -171,20 +190,16 @@ main img{
     background-color: var(--color2);
     text-align: center;
     border: 10px solid var(--color2);
+    border-radius: 5px;
 }
-.inner-box h3{
+.inner-box h3,
+.inner-box p{
     color: var(--color1);
 }
 .inner-box img{
     width: 400px;
     height: 200px;
     display: block;
-}
-.inner-box a{
-    color: var(--color1);
-}
-.inner-box a:hover{
-    color: var(--color4);
 }
 
 
@@ -239,13 +254,11 @@ main img{
     height: 50px;
     font-size: 25px;
     margin: 5px;
-    color: var(--color2);
-    background-color: var(--color1);
-    border: 2px solid var(--color2);
+    border: 2px solid var(--color1);
     border-radius: 50%;
 }
 .tc-maroon{
-    background-color: maroon;
+    background-color: rgb(193, 9, 9);
 }
 .tc-teal{
     background-color: teal;
@@ -278,6 +291,7 @@ main img{
     width: 200px;
     border: 2px solid var(--color2);
     border-radius: 5%;
+    text-align: center;
 }
 .sbox:hover{
     background-color: var(--color2);
@@ -289,15 +303,33 @@ main img{
     background-color: var(--color2);
     color: var(--color1);
     text-align: center;
+    margin: 20px 0;
 }
 .sbox img{
     width: 100%;
+    height: 70%;
 }
-.react{
-    animation: spinner 10s linear infinite;
+.spin{
+    animation: spinner 5s linear infinite;
 }
+
+.mirror{
+    animation: mirror 3s linear infinite;
+}
+
+.out3d{
+    animation: out3d 5s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
+}
+
+@keyframes mirror {
+    100% { transform: rotateY(360deg); }
+}
+
+@keyframes out3d{
+    100% { transform: rotate3d(1, 1, 1, 360deg); }
+}
+
 @keyframes spinner{
-    0% { transform: rotate(0); }
     100% { transform: rotate(360deg); }
 }
 
@@ -333,7 +365,9 @@ main img{
 .cbox h2{
     background-color: var(--color2);
     color: var(--color1);
-    text-align: center;
+}
+.cbox img{
+    width: 75%;
 }
 
 /* Education */
@@ -426,6 +460,10 @@ footer{
         padding: 0;
         font-weight: bold;
     }
+    .versions-btn{
+        left: auto;
+        right: 22px;
+    }
     main{
         background-position: right;
     }
@@ -440,6 +478,9 @@ footer{
     }
     #close{
         background-color: red;
+    }
+    .inner-top{
+        font-size: xx-small;
     }
     .inner-box{
         width: 200px;

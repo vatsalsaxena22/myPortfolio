@@ -1,319 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vatsal Saxena | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/Profile.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./previous_versions/versions.css" />
+    <link rel="shortcut icon" href="images/Profile.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>PORTFOLIO</h1>
+      <h1>PORTFOLIO</h1>
 
-        <nav>
-            <a href="#">Introduction</a>
-            <a href="#nav-s">Skills</a>
-            <a href="#nav-c">Certificates</a>
-            <a href="#nav-e">Education</a>
-        </nav>
+      <nav>
+        <a href="#">Introduction</a>
+        <a href="#nav-s">Skills</a>
+        <a href="#nav-c">Certificates</a>
+        <a href="#nav-e">Education</a>
+      </nav>
     </header>
 
+    <button class="versions-btn" title="Versions">
+      <i class="fa-solid fa-cube"></i>
+    </button>
+
     <main id="main-bg">
-        <div class="half">
-            <h3>This is,</h3>
-            <h1>Vatsal Saxena</h1>
-            <h3>A <span id="element">Web Developer</span></h3>
+      <div class="half">
+        <h3>This is,</h3>
+        <h1>Vatsal Saxena</h1>
+        <h3>A <span id="element">Web Developer</span></h3>
 
-            <a class="download" href="./CV.pdf" download>Download CV</a>
+        <a class="btn" href="./CV.pdf" download="">Download CV</a>
 
-            <button type="button" onclick="alert('Contact me at: vatsalsaxena22@gmail.com')">Contact Me</button>
+        <button
+          type="button"
+          onclick="alert('Contact me at: vatsalsaxena22@gmail.com')"
+        >
+          Contact Me
+        </button>
 
-            <button onclick="document.getElementById('projects').style.display = 'block';">My Projects</button>
-        </div>
+        <button
+          onclick="document.getElementById('projects').style.display = 'block';"
+        >
+          My Projects
+        </button>
+      </div>
 
-        <div class="half">
-            <img src="images/Profile.jpg" alt="myPic">
-        </div>
+      <div class="half">
+        <img src="images/Profile.jpg" alt="myPic" />
+      </div>
     </main>
 
     <div id="projects">
-        <button id="close" onclick="
-            document.getElementById('projects').style.display = 'none';">
-            <i class="fa-solid fa-close"></i>
-        </button>
+      <button
+        id="close"
+        onclick="
+            document.getElementById('projects').style.display = 'none';"
+      >
+        <i class="fa-solid fa-close"></i>
+      </button>
+      <div class="inner-top">
         <h1><i class="fa-solid fa-code"></i> Projects</h1>
-        <hr>
-        <div class="inner">
-            <div class="inner-box">
-                <h3>Alphabet Website</h3>
-                <a href="https://alphabet-v2.netlify.app" target="_blank"><img src="./images/Alphabet v2.0.png" alt="Alphabet"></a>
-                <a href="https://alphabet-v2.netlify.app" target="_blank">https://alphabet-v2.netlify.app</a>
-            </div>
-            <div class="inner-box">
-                <h3>First School Website</h3>
-                <a href="https://firstschool.netlify.app" target="_blank"><img src=".//images/First School.png" alt="firstschool"></a>
-                <a href="https://firstschool.netlify.app" target="_blank">https://firstschool.netlify.app</a>
-            </div>
-            <div class="inner-box">
-                <h3>Stone Paper Scissors Game</h3>
-                <a href="https://firstschool.netlify.app/spsgame" target="_blank"><img src="./images/spsgame.png" alt="SPS Game"></a>
-                <a href="https://firstschool.netlify.app/spsgame" target="_blank">https://firstschool.netlify.app/spsgame</a>
-            </div>
-            <div class="inner-box">
-                <h3>My CV</h3>
-                <a href="https://vatsalsaxena.w3spaces.com" target="_blank"><img src="./images/myCV.png" alt="My CV"></a>
-                <a href="https://vatsalsaxena.w3spaces.com" target="_blank">https://vatsalsaxena.w3spaces.com</a>
-            </div>
-            <div class="inner-box">
-                <h3>Calculator App</h3>
-                <img src="./images/Calculator App.png" alt="Calculator">
-            </div>
-            <div class="inner-box">
-                <h3>NCERT Books Webpage Clone</h3>
-                <img src="./images/NCERT Clone.png" alt="NCERT">
-            </div>
-            <div class="inner-box">
-                <h3>Netflix Homepage Clone</h3>
-                <img src="./images/Netflix Clone.png" alt="Netflix">
-            </div>
+        <a
+          href="https://vatsalsaxena-projects.netlify.app/"
+          target="_blank"
+          class="btn"
+          >All Projects</a
+        >
+      </div>
+      <div class="inner">
+        <div class="inner-box">
+          <h3>My CV</h3>
+          <a href="https://vatsalsaxena.w3spaces.com" target="_blank"
+            ><img src="./images/myCV.png" alt="My CV"
+          /></a>
+          <p>Click to Open</p>
         </div>
+        <div class="inner-box">
+          <h3>Alphabet Website</h3>
+          <a href="https://alphabet-v2.netlify.app" target="_blank"
+            ><img src="./images/Alphabet v2.0.png" alt="Alphabet"
+          /></a>
+          <p>Click to Open</p>
+        </div>
+        <div class="inner-box">
+          <h3>First School Website</h3>
+          <a href="https://firstschool.netlify.app" target="_blank"
+            ><img src="./images/First School.png" alt="firstschool"
+          /></a>
+          <p>Click to Open</p>
+        </div>
+        <div class="inner-box">
+          <h3>Projects Website</h3>
+          <a href="https://vatsalsaxena-projects.netlify.app/" target="_blank"
+            ><img src="./images/projects.png" alt="Projects"
+          /></a>
+          <p>Click to Open</p>
+        </div>
+      </div>
     </div>
 
     <div class="top">
-        <button><a href="#top"><i class="fa-solid fa-circle-arrow-up"></i></a></button>
+      <button>
+        <a href="#top"><i class="fa-solid fa-circle-arrow-up"></i></a>
+      </button>
     </div>
 
     <div class="themes">
-        <div id="toogle-themes">
-            <button class="theme-colors tc-maroon" title="Maroon" onclick="changeMaroon()">&nbsp;</button>
-            <button class="theme-colors tc-teal" title="Teal" onclick="changeTeal()">&nbsp;</button>
-            <button class="theme-colors tc-royalblue" title="Royal Blue" onclick="changeRoyalblue()">&nbsp;</button>
-            <button class="theme-colors tc-purple" title="Purple" onclick="changePurple()">&nbsp;</button>
-            <button class="themes-btn" title="Dark" onclick="changeDark()"><i class="fa-solid fa-moon"></i></button>
-            <button class="themes-btn" title="Light" onclick="changeLight()"><i class="fa-solid fa-sun"></i></button>
-        </div>
-        <button class="themes-btn" title="Themes" onclick="showThemes()"><i class="fa-solid fa-palette"></i></button>
+      <div id="toogle-themes" style="display: none">
+        <button
+          class="theme-colors tc-maroon"
+          title="Maroon"
+          onclick="changeColor('rgb(193, 9, 9)');"
+        >
+          &nbsp;
+        </button>
+
+        <button
+          class="theme-colors tc-teal"
+          title="Teal"
+          onclick="changeColor('teal');"
+        >
+          &nbsp;
+        </button>
+
+        <button
+          class="theme-colors tc-royalblue"
+          title="Royal Blue"
+          onclick="changeColor('royalblue');"
+        >
+          &nbsp;
+        </button>
+
+        <button
+          class="theme-colors tc-purple"
+          title="Purple"
+          onclick="changeColor('purple');"
+        >
+          &nbsp;
+        </button>
+
+        <button
+          class="themes-btn"
+          title="Dark"
+          onclick="changeTheme('#111', 'url(./images/background-dark.jpeg)');"
+        >
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <button
+          class="themes-btn"
+          title="Light"
+          onclick="changeTheme('#fff', 'url(./images/background-light.jpeg)');"
+        >
+          <i class="fa-solid fa-sun"></i>
+        </button>
+      </div>
+      <button class="themes-btn" title="Themes" onclick="showThemes();">
+        <i class="fa-solid fa-palette"></i>
+      </button>
     </div>
 
     <div class="skills-body" id="nav-s">
-        <h2><i class="fa-solid fa-star"></i> Skills</h2>
-        <div class="skills">
-            <div class="sbox">
-                <br>
-                <h2>HTML/HTML5</h2><br>
-                <img src="./images/HTML5_badge.png" alt="html" width="100%">
-            </div>
-            <div class="sbox">
-                <br>
-                <h2>CSS/CSS3</h2><br>
-                <img src="./images/CSS3_badge.png" alt="css" width="100%">
-            </div>
-            <div class="sbox">
-                <br>
-                <h2>JavaScript</h2><br>
-                <img src="./images/JS_badge.png" alt="js" width="100%">
-            </div>
-            <div class="sbox">
-                <br>
-                <h2>Git & GitHub</h2><br>
-                <img src="./images/git.png" alt="git" width="100%" height="40%">
-                <img src="./images/github.png" style="background-color: #fff;" alt="github" width="100%" height="30%">
-            </div>
-            <div class="sbox">
-                <br>
-                <h2>Bootstrap 5</h2><br>
-                <img src="./images/Bootstrap 5 Logo.png" alt="node.js" width="100%" height="70%">
-            </div>
-            <div class="sbox">
-                <br>
-                <h2>React.js</h2><br>
-                <img class="react" src="./images/react_logo.png" alt="js" width="100%">
-            </div>
-            <div class="sbox">
-                <br>
-                <h2>Node.js</h2><br>
-                <img src="./images/nodejs_logo.png" alt="node.js" width="100%">
-            </div>
-        </div>
+      <h2><i class="fa-solid fa-star"></i> Skills</h2>
+      <div class="skills"></div>
     </div>
 
     <div class="certificates-body" id="nav-c">
-        <h2><i class="fa-solid fa-certificate"></i> Certificates</h2>
-        <div class="certificates">
-            <div class="cbox">
-                <h2>HTML</h2>
-                <img src="./images/html-certificate.png" alt="html" width="75%">
-            </div>
-            <div class="cbox">
-                <h2>HTML Advanced</h2>
-                <img src="./images/html-ad-certificate.png" alt="html Advanced" width="75%">
-            </div>
-            <div class="cbox">
-                <h2>Building a Website</h2>
-                <img src="./images/build-certificate.png" alt="build-certificate" width="75%">
-            </div>
-            <div class="cbox">
-                <h2>HTML & CSS</h2>
-                <img src="./images/html-css.png" alt="" width="75%">
-            </div>
-            <div class="cbox">
-                <h2>JavaScript</h2>
-                <img src="./images/js-certificate.png" alt="" width="75%">
-            </div>
-            <div class="cbox">
-                <h2>Introduction to JavaScript</h2>
-                <img src="./images/JS-intro-certificate.jpg" alt="" width="75%">
-            </div>
-            <div class="cbox">
-                <h2>JavaScript Intermediate</h2>
-                <img src="./images/js-intermediate.jpg" alt="" width="75%">
-            </div>
-            <div class="cbox">
-                <h2>Node.js</h2>
-                <img src="./images/node-certificate.png" alt="" width="75%">
-            </div>
-        </div>
+      <h2><i class="fa-solid fa-certificate"></i> Certificates</h2>
+      <div class="certificates"></div>
     </div>
 
     <div class="education-body" id="nav-e">
-        <h1><i class="fa-solid fa-pencil"></i> Education</h1>
-        <hr>
-        <div class="education">
-            <h2>Academics -</h2>
-            <ul>
-                <li>Senior Secondary School (CBSE) - 2017</li>
-                <li>Higher Senior Secondary School (CBSE) - 2019</li>
-                <li>Graduation - B.Sc. from Bundelkhand University - 2023</li>
-            </ul>
-            <h2>Other Skills / Technologies Known -</h2>
-            <ol>
-                <li>W3.CSS Framework - By W3schools</li>
-                <li>W3.JS Library - By W3schools</li>
-                <li>Fonts - Google Fonts</li>
-                <li>Icons - Font Awesome</li>
-                <li>Web Hosting - Netlify</li>
-                <li>npm (Node Package Manager)</li>
-                <li>Vite - Building JS Application</li>
-                <li>C.L.I. (Command Line Interface)</li>
-                <table>
-                    <tr>
-                        <th>9. Microsoft Office</th>
-                        <th>10. LibreOffice</th>
-                    </tr>
-                    <tr>
-                        <td>MS Word</td>
-                        <td>Writer</td>
-                    </tr>
-                    <tr>
-                        <td>MS Excel</td>
-                        <td>Calc</td>
-                    </tr>
-                    <tr>
-                        <td>MS PowerPoint</td>
-                        <td>Impress</td>
-                    </tr>
-                </table>
-
-                <!-- <li>Microsoft Office -</li>
-                <ul>
-                    <li>MS Word</li>
-                    <li>MS Excel</li>
-                    <li>MS PowerPoint</li>
-                </ul>
-                <li>LibreOffice -</li>
-                <ul>
-                    <li>Writer</li>
-                    <li>Calc</li>
-                    <li>Impress</li>
-                </ul> -->
-            </ol>
-        </div>
+      <h1><i class="fa-solid fa-pencil"></i> Education</h1>
+      <hr />
+      <div class="education">
+        <h2>Academics -</h2>
+        <ul>
+          <li>Senior Secondary School (CBSE) - 2017</li>
+          <li>Higher Senior Secondary School (CBSE) - 2019</li>
+          <li>Graduation - B.Sc. from Bundelkhand University - 2023</li>
+        </ul>
+        <h2>Other Skills / Technologies Known -</h2>
+        <ol>
+          <li>W3.CSS Framework - By W3schools</li>
+          <li>W3.JS Library - By W3schools</li>
+          <li>Fonts - Google Fonts</li>
+          <li>Icons - Font Awesome</li>
+          <li>Web Hosting - Netlify</li>
+          <li>npm (Node Package Manager)</li>
+          <li>Vite - Building JS Application</li>
+          <li>C.L.I. (Command Line Interface)</li>
+          <table>
+            <tr>
+              <th>9. Microsoft Office</th>
+              <th>10. LibreOffice</th>
+            </tr>
+            <tr>
+              <td>MS Word</td>
+              <td>Writer</td>
+            </tr>
+            <tr>
+              <td>MS Excel</td>
+              <td>Calc</td>
+            </tr>
+            <tr>
+              <td>MS PowerPoint</td>
+              <td>Impress</td>
+            </tr>
+          </table>
+        </ol>
+      </div>
     </div>
 
     <footer>
-        <h2><i class="fa-solid fa-globe"></i> About</h2>
-        <h4>This Webpage is developed by <span class="vs">Mr. Vatsal Saxena</span>.</h4>
-        <h3>Technologies Used -</h3>
-        <h4 class="links">
-            <a href="https://html.com/" target="_blank">HTML</a> |
-            <a href="https://www.w3.org/Style/CSS/" target="_blank">CSS</a> |
-            <a href="https://www.javascript.com/" target="_blank">JavaScript</a> |
-            <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>
-        </h4>
-        <h4>Hosted on <span class="links"><a href="https://github.com" target="_blank">GitHub Pages</a></span>.</h4>
-        <h2>
-            <i class="fa-brands fa-google" onclick="alert('Contact me at: vatsalsaxena22@gmail.com')"></i>
-            <a href="https://in.linkedin.com/in/vatsal-saxena-89215629a?trk=people-guest_people_search-card" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/Vatsalsaxena22" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.facebook.com/vatsalya.saxena.3/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
-        </h2>
+      <h2><i class="fa-solid fa-globe"></i> About</h2>
+      <h4>
+        This Webpage is developed by <span class="vs">Mr. Vatsal Saxena</span>.
+      </h4>
+      <h3>Technologies Used -</h3>
+      <h4 class="links">
+        <a href="https://html.com/" target="_blank">HTML</a> |
+        <a href="https://www.w3.org/Style/CSS/" target="_blank">CSS</a> |
+        <a href="https://www.javascript.com/" target="_blank">JavaScript</a> |
+        <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>
+      </h4>
+      <h4>
+        Hosted on
+        <span class="links"
+          ><a href="https://github.com" target="_blank">GitHub Pages</a></span
+        >.
+      </h4>
+      <h2>
+        <i
+          class="fa-brands fa-google"
+          onclick="alert('Contact me at: vatsalsaxena22@gmail.com')"
+        ></i>
+        <a
+          href="https://in.linkedin.com/in/vatsal-saxena-89215629a?trk=people-guest_people_search-card"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/Vatsalsaxena22" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.facebook.com/vatsalya.saxena.3/" target="_blank"
+          ><i class="fa-brands fa-facebook-square"></i
+        ></a>
+      </h2>
     </footer>
 
-    <script>
-        function showThemes(){
-            const themeButtons = document.getElementById('toogle-themes');
-
-            if (themeButtons.style.display == 'none'){
-                themeButtons.style.display = 'block';
-            } else {
-                themeButtons.style.display = 'none';
-            }
-        }
-
-        function changeDark(){
-            const root = document.documentElement;
-
-            root.style.setProperty('--color1', '#111');
-            root.style.setProperty('--color4', '#fff');
-            document.getElementById('main-bg').style.backgroundImage = 'url(./images/background-dark.jpeg)';
-        }
-
-        function changeLight(){
-            const root = document.documentElement;
-
-            root.style.setProperty('--color1', '#fff');
-            root.style.setProperty('--color4', '#111');
-            document.getElementById('main-bg').style.backgroundImage = 'url(./images/background-light.jpeg)';
-        }
-
-        function changeMaroon(){
-            const root = document.documentElement;
-
-            root.style.setProperty('--color2', 'maroon');
-        }
-
-        function changeTeal(){
-            const root = document.documentElement;
-
-            root.style.setProperty('--color2', 'teal');
-        }
-
-        function changeRoyalblue(){
-            const root = document.documentElement;
-
-            root.style.setProperty('--color2', 'royalblue');
-        }
-
-        function changePurple(){
-            const root = document.documentElement;
-
-            root.style.setProperty('--color2', 'purple');
-        }
-
-    </script>
-
+    <script src="./previous_versions/versions.js"></script>
+    <script src="./data/skills.js"></script>
+    <script src="./data/certificate.js"></script>
+    <script src="./script.js"></script>
     <!-- Typed.js -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-        var typed = new Typed('#element', {
-          strings: ['Front-End Developer', 'Web Developer', 'Programmer', 'Front-End Developer'],
-          typeSpeed: 75, 
-        });
-      </script>
-</body>
-
+      var typed = new Typed("#element", {
+        strings: [
+          "Front-End Developer",
+          "Web Developer",
+          "Programmer",
+          "Front-End Developer",
+        ],
+        typeSpeed: 75,
+      });
+    </script>
+  </body>
 </html>

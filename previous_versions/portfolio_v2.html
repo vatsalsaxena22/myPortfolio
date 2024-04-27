@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vatsal Saxena | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="../images/Profile.jpg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      :root {
+        --maincolor: teal;
+        --secondarycolor: #f2e7dc;
+        --textcolorone: #a9d9d0;
+        --textcolortwo: #0d0d0d;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .exit-btn{
+        position: fixed;
+        top: 100px;
+        left: 10px;
+        background-color: rgba(100, 100, 100, 0.5);
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 15px 30px;
+        border: 2px solid;
+        border-radius: 30px;
+        box-shadow: 0 0px 6px rgba(0, 0, 0, 0.6);
+      }
+      header {
+        background-color: var(--maincolor);
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: sticky;
+        top: 0;
+      }
+      header h1 {
+        padding: 0;
+        color: var(--secondarycolor);
+        font-style: italic;
+      }
+      nav {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      nav a {
+        color: var(--textcolorone);
+        text-decoration: none;
+        padding: 0 10px;
+      }
+      nav a:hover {
+        color: var(--textcolortwo);
+      }
+      main {
+        background-color: var(--secondarycolor);
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap-reverse;
+        padding: 8% 10%;
+        align-items: center;
+        line-height: 200%;
+        font-size: x-large;
+      }
+      main h1 {
+        color: var(--maincolor);
+      }
+      main button {
+        padding: 10px;
+        background-color: var(--maincolor);
+        color: white;
+        font-size: medium;
+      }
+      main button:hover {
+        background-color: var(--secondarycolor);
+        color: var(--maincolor);
+      }
+      main img {
+        width: 250px;
+        border: 7px solid var(--maincolor);
+        border-radius: 50%;
+      }
+
+      #abc {
+        display: none;
+        width: 50%;
+        height: 50%;
+        position: fixed;
+        top: 25%;
+        left: 25%;
+        background-color: var(--secondarycolor);
+        outline: 2px solid;
+        border: 10px solid var(--maincolor);
+      }
+      #close {
+        border: 2px solid;
+        position: absolute;
+        right: 0;
+        padding: 5px;
+      }
+      #close:hover {
+        background-color: red;
+      }
+      .inner {
+        margin: 5%;
+        height: 50%;
+        color: var(--textcolortwo);
+      }
+      .inner a {
+        color: var(--maincolor);
+      }
+      .top {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        padding: 10px;
+        background-color: var(--maincolor);
+        border: 2px solid var(--textcolortwo);
+        border-radius: 8%;
+        opacity: 70%;
+      }
+      .top:hover {
+        opacity: 100%;
+      }
+      .top a {
+        color: var(--secondarycolor);
+        text-decoration: none;
+      }
+      section {
+        background-color: var(--maincolor);
+        padding: 20px;
+      }
+      .skills {
+        display: flex;
+        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .sbox {
+        background-color: var(--secondarycolor);
+        height: 300px;
+        width: 200px;
+        border: 2px solid var(--textcolortwo);
+      }
+      .sbox h1 {
+        background-color: var(--maincolor);
+        color: var(--textcolorone);
+        text-align: center;
+      }
+      .sbox img {
+        width: 100%;
+      }
+      aside {
+        background-color: var(--secondarycolor);
+        padding: 20px;
+      }
+      .certificates {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .cbox {
+        background-color: var(--maincolor);
+        height: 200px;
+        width: 300px;
+        border: 2px solid var(--textcolortwo);
+        text-align: center;
+        line-height: 40px;
+      }
+      .cbox h1 {
+        background-color: var(--secondarycolor);
+        color: var(--textcolortwo);
+        text-align: center;
+      }
+      .cbox img{
+        width: 75%;
+      }
+      article {
+        background-color: var(--maincolor);
+        padding: 20px;
+        list-style: square;
+      }
+      article h3 {
+        color: var(--secondarycolor);
+        padding: 20px;
+        line-height: 30px;
+      }
+      footer {
+        background-color: var(--secondarycolor);
+        padding: 40px;
+        text-align: center;
+      }
+      footer span {
+        color: var(--maincolor);
+      }
+
+      @media only screen and (max-width: 455px) {
+        header {
+          padding: 0;
+          flex-direction: column;
+        }
+        header h1 {
+          padding: 3%;
+          background-color: var(--maincolor);
+          color: var(--secondarycolor);
+          font-style: italic;
+          text-align: center;
+        }
+        nav {
+          background-color: var(--maincolor);
+          display: flex;
+          justify-content: space-around;
+          border-top: 2px solid black;
+        }
+        nav a {
+          text-decoration: none;
+          color: var(--textcolortwo);
+          font-size: 80%;
+          padding: 0;
+        }
+        .skills {
+          justify-content: center;
+        }
+        .certificates {
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>PORTFOLIO</h1>
+
+      <nav>
+        <a href="#">Introduction</a>
+        <a href="#navs">Skills</a>
+        <a href="#navc">Certificates</a>
+        <a href="#nave">Education</a>
+      </nav>
+    </header>
+
+    <a href="../index.html" class="exit-btn">Exit</a>
+
+    <main>
+      <div class="half">
+        <h3>This is,</h3>
+        <h1>Vatsal Saxena</h1>
+        <h3>A Web Developer</h3>
+        <button
+          type="button"
+          onclick="alert('Contact me at: vatsalsaxena22@gmail.com')"
+        >
+          Contact Me
+        </button>
+
+        <button
+          onclick="document.getElementById('abc').style.display = 'block';"
+        >
+          My Projects
+        </button>
+      </div>
+
+      <div class="half">
+        <img src="../images/Profile.jpg" alt="myPic" />
+      </div>
+    </main>
+
+    <div id="abc">
+      <button
+        id="close"
+        onclick="document.getElementById('abc').style.display = 'none';"
+      >
+        &nbsp;x&nbsp;
+      </button>
+      <div class="inner">
+        <h1>Projects</h1>
+        <br />
+        <hr />
+        <br />
+        <h2>Alphabet Website</h2>
+        <a href="https://alphabet-vs.netlify.app" target="_blank"
+          >https://alphabet-vs.netlify.app</a
+        >
+        <br /><br />
+        <h2>First School Website</h2>
+        <a href="https://firstschool.netlify.app" target="_blank"
+          >https://firstschool.netlify.app</a
+        >
+        <br /><br />
+        <h2>My CV</h2>
+        <a href="https://vatsalsaxena.w3spaces.com" target="_blank"
+          >https://vatsalsaxena.w3spaces.com</a
+        >
+        <br /><br /><br />
+        <hr />
+      </div>
+    </div>
+
+    <div class="top">
+      <a href="#top">Go to Top</a>
+    </div>
+
+    <section>
+      <h1>Skills</h1>
+      <div class="skills" id="navs">
+        <div class="sbox">
+          <br />
+          <h1>HTML/HTML5</h1>
+          <br />
+          <img src="../images/HTML5_badge.png" alt="html" />
+        </div>
+        <div class="sbox">
+          <br />
+          <h1>CSS/CSS3</h1>
+          <br />
+          <img src="../images/CSS3_badge.png" alt="css" />
+        </div>
+        <div class="sbox">
+          <br />
+          <h1>JavaScript</h1>
+          <br />
+          <img src="../images/JS_badge.png" alt="js" />
+        </div>
+        <div class="sbox">
+          <br />
+          <h1>Git</h1>
+          <br />
+          <img src="../images/git.png" alt="git" />
+        </div>
+        <div class="sbox">
+          <br />
+          <h1>GitHub</h1>
+          <br />
+          <img src="../images/github.jpeg" alt="github" />
+        </div>
+      </div>
+    </section>
+
+    <aside>
+      <h1>Certificates</h1>
+      <div class="certificates" id="navc">
+        <div class="cbox">
+          <h1>HTML</h1>
+          <img src="../images/html-certificate.png" alt="html" />
+        </div>
+        <div class="cbox">
+          <h1>HTML Advanced</h1>
+          <img
+            src="../images/html-ad-certificate.png"
+            alt="html Advanced"
+          />
+        </div>
+        <div class="cbox">
+          <h1>Building a Website</h1>
+          <img
+            src="../images/build-certificate.png"
+            alt="build-certificate"
+          />
+        </div>
+        <div class="cbox">
+          <h1>HTML & CSS</h1>
+          <img src="../images/html-css.png" alt="" />
+        </div>
+        <div class="cbox">
+          <h1>JavaScript</h1>
+          <img src="../images/js-certificate.png" alt="" />
+        </div>
+      </div>
+    </aside>
+
+    <article id="nave">
+      <h1>Education</h1>
+      <h3>
+        <li>Secondary School (CBSE) - 2017</li>
+        <li>Senior Secondary School (CBSE) - 2019</li>
+        <li>Graduation - B.Sc. from Bundelkhand University - 2023</li>
+      </h3>
+    </article>
+
+    <footer>
+      <h4>
+        This Webpage is completely developed & designed by <br /><span
+          >Mr. Vatsal Saxena</span
+        >.
+      </h4>
+    </footer>
+  </body>
+</html>
