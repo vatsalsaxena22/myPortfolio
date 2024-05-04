@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta Data -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Title And Favicon -->
     <title>Vatsal Saxena | Portfolio</title>
+    <link rel="shortcut icon" href="images/Profile.jpg" type="image/x-icon" />
+    
+    <!-- CSS and Icon -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./previous_versions/versions.css" />
-    <link rel="shortcut icon" href="images/Profile.jpg" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -17,21 +22,24 @@
   </head>
 
   <body>
+    <!-- Header Section -->
     <header>
       <h1>PORTFOLIO</h1>
 
+      <button class="versions-btn" title="Versions">
+        <i class="fa-solid fa-cube"></i>
+      </button>
+
       <nav>
         <a href="#">Introduction</a>
+        <a href="#nav-ex">Experience</a>
         <a href="#nav-s">Skills</a>
         <a href="#nav-c">Certificates</a>
         <a href="#nav-e">Education</a>
       </nav>
     </header>
 
-    <button class="versions-btn" title="Versions">
-      <i class="fa-solid fa-cube"></i>
-    </button>
-
+    <!-- Hero Section -->
     <main id="main-bg">
       <div class="half">
         <h3>This is,</h3>
@@ -59,6 +67,7 @@
       </div>
     </main>
 
+    <!-- Projects Window -->
     <div id="projects">
       <button
         id="close"
@@ -108,12 +117,14 @@
       </div>
     </div>
 
+    <!-- Go to top Button  -->
     <div class="top">
       <button>
         <a href="#top"><i class="fa-solid fa-circle-arrow-up"></i></a>
       </button>
     </div>
 
+    <!-- Themes Button -->
     <div class="themes">
       <div id="toogle-themes" style="display: none">
         <button
@@ -169,6 +180,20 @@
       </button>
     </div>
 
+    <!-- Body Sections Starts Here -->
+    <div class="experience-body" id="nav-ex">
+      <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
+      <div class="experiences">
+        <h1>
+          Front-End Developer at
+          <a href="https://www.cantechnologies.co.in/" target="_blank"
+            >CAN Technologies Pvt. Ltd.</a
+          >
+        </h1>
+        <h3>May 2024 - Till Now (Full Time)</h3>
+      </div>
+    </div>
+
     <div class="skills-body" id="nav-s">
       <h2><i class="fa-solid fa-star"></i> Skills</h2>
       <div class="skills"></div>
@@ -220,7 +245,9 @@
         </ol>
       </div>
     </div>
+    <!-- Body Sections Ends Here -->
 
+    <!-- Footer Section -->
     <footer>
       <h2><i class="fa-solid fa-globe"></i> About</h2>
       <h4>
@@ -258,11 +285,12 @@
       </h2>
     </footer>
 
+    <!-- JavaScripts -->
     <script src="./previous_versions/versions.js"></script>
     <script src="./data/skills.js"></script>
     <script src="./data/certificate.js"></script>
     <script src="./script.js"></script>
-    <!-- Typed.js -->
+    <!-- Typed.js Starts -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed("#element", {
@@ -275,5 +303,6 @@
         typeSpeed: 75,
       });
     </script>
+    <!-- Typed.js Ends -->
   </body>
 </html>

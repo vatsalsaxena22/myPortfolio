@@ -4,11 +4,15 @@ From the City of Orai in the District Jalaun in Uttar Pradesh.
 
 - Visit my Portfolio @ "https://vatsalsaxena22.github.io/myPortfolio/"
 
+# Experience
+  * *Frontend Developer* at CAN Technologies Pvt. Ltd.
+ 
 # Skills
   * HTML/HTML5
   * CSS/CSS3
-  * Building a website (HTML+CSS)
-  * Git/GitHub
+  * Git (VCS)
+  * GitHub
+  * Website Hosting
   * JavaScript (ECMA Script 6)
   * Node.js
   * React.js
