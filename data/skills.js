@@ -47,4 +47,16 @@ let skills = [
         alt : "Node.js",
         animation : "spin",
     },
+    {
+        skillName : "Express.js",
+        image : "express.png",
+        alt : "Express.js",
+        animation : "spin",
+    },
+    {
+        skillName : "MongoDB",
+        image : "mongo.png",
+        alt : "MongoDB",
+        animation : "mirror",
+    },
 ];

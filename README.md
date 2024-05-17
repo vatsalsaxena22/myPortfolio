@@ -1,6 +1,7 @@
 # This is *Vatsal Saxena*
-A *Web Developer*
-From the City of Orai in the District Jalaun in Uttar Pradesh.
+A *MERN Stack Developer*
+And this is my Portfolio Website.
+
 
 - Visit my Portfolio @ "https://vatsalsaxena22.github.io/myPortfolio/"
 
@@ -14,8 +15,10 @@ From the City of Orai in the District Jalaun in Uttar Pradesh.
   * GitHub
   * Website Hosting
   * JavaScript (ECMA Script 6)
-  * Node.js
   * React.js
+  * Node.js
+  * Express.js
+  * MongoDB
   
 # Certificates
   1. Microsoft Office 3 hours Program - By Skill Course - SQ21T01
