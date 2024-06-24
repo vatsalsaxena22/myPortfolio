@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voting Machine</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="https://st.depositphotos.com/1041273/4460/v/450/depositphotos_44606961-stock-illustration-hand-putting-a-voting-ballot.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+      <h1>Voting Machine <span>By Vatsal Saxena</span></h1>
+
+      <div class="step-1 steps">
+        <h2>Candidates Info</h2>
+        <form action="">
+          <input
+            placeholder="First Candidate's Name"
+            type="text"
+            id="candidate-1"
+            required
+          />
+          <input
+            placeholder="Second Candidate's Name"
+            type="text"
+            id="candidate-2"
+            required
+          />
+          <button onclick="step1()" type="button">Submit</button>
+        </form>
+      </div>
+
+      <div class="step-2 steps">
+        <h2>No. of Voters</h2>
+        <form action="">
+          <input
+            placeholder="Enter no. of Voters"
+            type="number"
+            id="voter-count"
+            required
+          />
+          <button type="button" onclick="step2()">Submit</button>
+        </form>
+      </div>
+
+      <div class="step-3 steps">
+        <h2>Start Voting</h2>
+        <h3>Voter <span id="voterID">1</span> -</h3>
+        <form class="radio">
+          <input
+            type="radio"
+            id="radio1"
+            name="candidate"
+            value="candidate-1"
+            required
+          />
+          <label id="display-candidate-1">Candidate 1</label>
+          <input
+            type="radio"
+            id="radio2"
+            name="candidate"
+            value="candidate-2"
+            required
+          />
+          <label id="display-candidate-2">Candidate 2</label>
+        </form>
+        <button type="button" onclick="step3()">Submit</button>
+      </div>
+
+      <div class="step-4 steps">
+        <h2>Show Result</h2>
+        <h3><span id="result"></span> Wins!!!</h3>
+      </div>
+
+      <button class="start-btn" onclick="openSteps(a)">Start</button>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

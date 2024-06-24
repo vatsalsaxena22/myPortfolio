@@ -1,0 +1,34 @@
+@media screen and (max-width: 600px) {
+    .d-no{
+        display: block;
+    }
+    .m-no{
+        display: none;
+    }
+    header{
+        padding: 20px;
+        background-color: white;
+        font-size: medium;
+    }
+    header a{
+        margin-right: 5px;
+        padding: 5px;
+        color: black;
+        text-decoration: none;
+    }
+    main{
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .four{
+        width: 100%;
+    }
+    .one{
+        width: 100%;
+    }
+    footer{
+        background-color: black;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

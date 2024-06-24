@@ -1,0 +1,70 @@
+@media screen and (max-width: 600px) {
+    header .logo{
+        padding-right: 30px;
+        position: relative;
+        left: -50px;
+    }
+    .m-no{
+        display: none;
+    }
+    .cart-counts{
+        right: 16px;
+    }
+    main{
+        padding: 0;
+    }
+    .category{
+        margin: 0;
+        padding: 0 10px;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        justify-content: start;
+    }
+    .category-item img{
+        width: 50px;
+    }
+    .poster{
+        margin: 0;
+        height: 150px;
+    }
+    .poster img{
+        width: 100%;
+        height: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: cover;
+    }
+    .prev,
+    .next {
+        top: 42%;
+        padding: 20px 10px;
+    }
+    .dot{
+        top: -25px;
+    }
+    .shopping-container{
+        gap: 5px;
+        justify-content: space-around;
+    }
+    .shopping-items{
+        width: 160px;
+        height: 300px;
+    }
+    .name{
+        text-wrap: nowrap;
+        overflow: hidden;
+    }
+    .layer3{
+        display: none;
+    }
+    .footer-side{
+        border: none;
+    }
+    .footer-down{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 50px;
+    color: white;
+}
+body{
+    background-color: black;
+}
+hr{
+    height: 10px;
+    background-color: #222;
+    border: black;
+}
+.welcome{
+    background: url(./img/bgimg.jpg);    
+}
+header{
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 180px;
+}
+.full-logo{
+    width: 150px;
+    height: 40px;
+}
+.lang{
+    background-color: rgb(50, 50, 50);
+    padding: 8px 15px;
+    color: white;
+    border-radius: 5px;
+}
+.sign-in{
+    background-color: red;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+}
+main{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 180px 40px;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+    line-height: 250%;
+}
+.email{
+    background-color: rgba(50, 50, 50, 0.5);
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 15px;
+    width: 350px;
+    color: white;
+    font-size: larger;
+}
+.get-started{
+    background-color: red;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: larger;
+}
+.box{
+    display: flex;
+    color: white;
+    padding: 10px 10%;
+}
+.text{
+    margin: 10% 0;
+    text-align: center;
+    font-size: 25px;
+}
+.ques{
+    text-align: center;
+    padding: 60px 150px;
+    color: white;
+}
+.ques h1{
+    padding: 20px;
+}
+.ques p{
+    font-size: 20px;
+    padding: 10px;
+}
+.ques button{
+    background-color: #333;
+    color: white;
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    margin: 10px 0;
+}
+.ques button:hover{
+    background-color: #444;
+}
+.ques button .left{
+    font-size: 25px;
+    padding: 15px;
+}
+.ques button .right{
+    font-size: 50px;
+}
+.ques .email{
+    display: inline;
+    font-size: 30px;
+}
+.ques .get-started{
+    background-color: red;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: larger;
+    width: unset;
+    display: inline;
+    font-size: 30px;
+}
+footer{
+    display: flex;
+    justify-content: left;
+    padding: 80px;
+    color: darkgrey;
+    font-size: 19px;
+}
+footer .items li{
+    text-decoration: underline;
+}
+footer .items .noline{
+    text-decoration: none;
+}
+footer .items{
+    line-height: 50px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer .lang{
+    font-size: 20px;
+    padding: 15px;
+    margin: 10px 0;
+}
+footer .hide{
+    visibility: hidden;
+}

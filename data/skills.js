@@ -35,6 +35,12 @@ let skills = [
         alt : "Bootstrap",
         animation : "mirror",
     },
+    // {
+    //     skillName : "Tailwind css",
+    //     image : "tailwind.png",
+    //     alt : "Tailwind",
+    //     animation : "mirror",
+    // },
     {
         skillName : "React.js",
         image : "react_logo.png",
@@ -54,9 +60,33 @@ let skills = [
         animation : "spin",
     },
     {
-        skillName : "MongoDB",
+        skillName : "mongoDB",
         image : "mongo.png",
-        alt : "MongoDB",
+        alt : "mongoDB",
         animation : "mirror",
     },
+    // {
+    //     skillName : "Redux",
+    //     image : "redux.png",
+    //     alt : "Redux",
+    //     animation : "spin",
+    // },
+    // {
+    //     skillName : "electron",
+    //     image : "electron.png",
+    //     alt : "electron",
+    //     animation : "spin",
+    // },
+    // {
+    //     skillName : "React Native",
+    //     image : "react-native.png",
+    //     alt : "React Native",
+    //     animation : "",
+    // },
+    // {
+    //     skillName : "Next.js",
+    //     image : "nextjs.jpg",
+    //     alt : "Next.js",
+    //     animation : "",
+    // },
 ];

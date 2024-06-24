@@ -18,7 +18,9 @@ And this is my Portfolio Website.
   * React.js
   * Node.js
   * Express.js
-  * MongoDB
+  * mongoDB
+  <!-- * Redux -->
+  <!-- * electron -->
   
 # Certificates
   1. Microsoft Office 3 hours Program - By Skill Course - SQ21T01
