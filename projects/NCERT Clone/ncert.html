@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NCERT</title>
+    <link rel="shortcut icon" href="./Text book-01.jpg" type="image/x-icon">
+    <style>
+      * {
+        margin: 0;
+      }
+      header {
+        background-color: mediumvioletred;
+        text-align: center;
+        padding: 10px;
+      }
+      main {
+        background-color: aliceblue;
+        padding: 10px;
+        font-size: 13px;
+        line-height: 20px;
+      }
+      main span {
+        font-size: large;
+      }
+      .drop {
+        float: right;
+      }
+      .md {
+        background-color: black;
+        color: white;
+        font-style: italic;
+        padding: 10px;
+      }
+      article {
+        padding: 10px;
+      }
+      article h2 {
+        color: mediumvioletred;
+      }
+      .i {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .i1 {
+        width: 100px;
+        height: 130px;
+        border: 1px solid black;
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+      }
+      .j {
+        display: flex;
+      }
+      .j1 {
+        width: 100px;
+        height: 130px;
+        border: 1px solid black;
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+      }
+      .f1 {
+        border-top: 1px solid yellow;
+        border-bottom: 3px solid yellow;
+        background-color: rgb(248, 245, 241);
+        padding: 20px;
+        font-size: 12px;
+      }
+      footer {
+        background-color: rgb(141, 18, 96);
+        color: white;
+        padding: 10px;
+        font-size: 13px;
+        line-height: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="ncertlogo1.png" alt="logo" height="50px" /><br />
+      <input
+        type="search"
+        placeholder="Search"
+        style="background-color: mediumvioletred"
+      />
+    </header>
+    <main>
+      <span>NCERT</span>
+      <button
+        style="background-color: white"
+        class="drop"
+        onclick="dropdownBtn();">
+        =
+      </button>
+      <div id="dropdown" style="display: none;">
+        <br />
+        <hr />
+        <p>Home</p>
+        <p>About</p>
+        <p>Constituents and Departments</p>
+        <p>Programmes</p>
+        <p>Gallery</p>
+        <p>Publication</p>
+        <p>Announcement</p>
+        <p>Contact</p>
+      </div>
+    </main>
+    <hr />
+    <div class="md">
+      <h1>Textbooks</h1>
+    </div>
+    <article>
+      <h2>Textbooks</h2>
+      <br /><br />
+      <div class="i">
+        <div class="i1">
+          <img src="syllabus-01-01.png" width="80px" />
+          <p>Syllabus</p>
+        </div>
+        <div class="i1">
+          <img src="Text book-01.jpg" width="80px" />
+          <p>eBooks</p>
+        </div>
+        <div class="i1">
+          <img src="prbook.webp" width="80px" />
+          <p>Purchase Books Online</p>
+        </div>
+        <div class="i1">
+          <img src="syllabus-01.jpg" width="80px" />
+          <p>Syllabus</p>
+        </div>
+        <div class="i1">
+          <img src="Text book-01.jpg" width="80px" />
+          <p>Syllabus</p>
+        </div>
+      </div>
+    </article>
+    <div class="f1">
+      <p>
+        RTI | Privacy Policy | Tamanna | Health & Wellness | ICT | Curriculum |
+        Library | QMTs | ICT Initiatives
+      </p>
+    </div>
+    <footer>
+      <h3 style="text-align: center">FOLLOW NCERT</h3>
+      <p style="text-align: center">Total Visitors:83743214</p>
+      <h4>Contact Us</h4>
+      <p>NCERT, Sri Aurobindo Marg, New Delhi-110016</p>
+      <p>dceta.ncert@nic.in</p>
+      <p>+91 8800440559</p>
+      <h3>Important Helpline Numbers</h3>
+      <p>Women Helpline Number : 7827170170</p>
+      <p>Cybercrime Reporting Number : 1930</p>
+      <hr />
+      <p>Copyright &#169; | Developed By CIET, NCERT | Hosted by NIC</p>
+    </footer>
+
+    <script>
+      let dropdownBtn = () => {
+        let dropDown = document.getElementById("dropdown");
+
+        if (dropDown.style.display == "none") {
+          dropDown.style.display = "block";
+        } else {
+          dropDown.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

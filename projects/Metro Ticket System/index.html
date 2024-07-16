@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metro Ticket</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <h1>Metro Ticket System <span>By Vatsal Saxena</span></h1>
+
+      <button onclick="openStep(a)" class="start-btn">Start</button>
+
+      <div id="step-1">
+        <h4>Full Name :</h4>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your Full Name"
+          required
+        />
+        <button onclick="step1()">Submit</button>
+      </div>
+
+      <div id="step-2">
+        <h4>Age :</h4>
+        <input type="number" id="age" placeholder="Enter your Age" />
+        <button onclick="step2()">Submit</button>
+      </div>
+
+      <div id="step-3">
+        <h4>Gender :</h4>
+        <select class="without-icon" id="gender">
+          <option value="">--Select--</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <button onclick="step3()">Submit</button>
+      </div>
+
+      <div id="step-4">
+        <div class="ticket">
+          <div class="t-h">
+            <img src="./logo.png" alt="" />
+            <h2>Metro Rail Corporation Ltd.</h2>
+          </div>
+          <div class="t-head">
+            <h3>Station 1</h3>
+            <h4>to</h4>
+            <h3>Station 2</h3>
+          </div>
+          <div class="date-div">
+            <h3>Date:</h3>
+            <p id="date"></p>
+            <p id="time"></p>
+          </div>
+          <div class="qr">
+            <img src="./MyPortfolioQR.png" alt="" />
+          </div>
+          <h3 class="">Passenger Details</h3>
+          <div class="t-body">
+            <div>
+              <p>Name</p>
+              <h3 id="t-name"></h3>
+            </div>
+            <div>
+              <p>Age</p>
+              <h3 id="t-age"></h3>
+            </div>
+            <div>
+              <p>Gender</p>
+              <h3 id="t-gender"></h3>
+            </div>
+          </div>
+          <div class="t-foot">
+            <div>
+              <p>Total Price</p>
+              <h3 id="t-price"></h3>
+            </div>
+            <div>
+              <p>Discount</p>
+              <h3 id="t-discount"></h3>
+            </div>
+            <div>
+              <p>Final Price</p>
+              <h3 id="t-final"></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <button id="myBtn">Discount Rates</button>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <table>
+          <caption>
+            Discount Rates
+          </caption>
+          <tr>
+            <th>Condition</th>
+            <th>Discount</th>
+          </tr>
+          <tr>
+            <td>Age &GreaterEqual; 60</td>
+            <td>70%</td>
+          </tr>
+          <tr>
+            <td>Age &#8804; 10</td>
+            <td>50%</td>
+          </tr>
+          <tr>
+            <td>Age &#8804; 5</td>
+            <td>100%</td>
+          </tr>
+          <tr>
+            <td>Female</td>
+            <td>50%</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
