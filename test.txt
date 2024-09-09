@@ -1,0 +1,50 @@
+Custom
+MERN
+CMS
+
+****
+
+Front-end
+Back-end
+Dev-Ops
+Softwares
+
+****
+
+Markup Language
+Stylesheets
+Scripting Language
+Programming Language
+Database
+
+****
+
+MS Office
+LibreOffice
+
+VS Code
+
+HTML
+CSS
+JavaScript
+React.Js
+Node.Js
+Express.Js
+MongoDB
+
+MongoDB Compass
+
+Git
+GitHub
+
+Postman API
+
+Python
+
+Xampp
+
+PHP
+MySQL
+
+Web hosting
+Deployment

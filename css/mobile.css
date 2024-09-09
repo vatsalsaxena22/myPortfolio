@@ -1,0 +1,71 @@
+/* CSS for Mobile */
+@media screen and (max-width: 600px) {
+    header{
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+    header h1{
+        padding: 20px;
+    }
+    nav{
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+        font-size: small;
+        padding: 0;
+        margin: 0;
+        background-color: var(--color2);
+    }
+    nav a{
+        color: var(--color1);
+        padding: 5px;
+        font-weight: bold;
+        background-color: var(--color2);
+    }
+    .versions-btn{
+        left: auto;
+        right: 22px;
+    }
+    main{
+        background-position: right;
+    }
+    main img{
+        width: 220px;
+    }
+    #projects{
+        width: auto;
+        top: 10%;
+        left: 10%;
+        right: 10%;
+    }
+    #close{
+        background-color: red;
+    }
+    .inner-top{
+        font-size: xx-small;
+    }
+    .inner-box{
+        width: 200px;
+    }
+    .inner-box h3{
+        text-wrap: wrap;
+    }
+    .inner-box img{
+        width: 200px;
+        height: 100px;
+    }
+    .inner-box a{
+        word-break: break-all;
+    }
+    .experiences,
+    .experiences-ex{
+        font-size: x-small;
+    }
+    .skills{
+        justify-content: center;
+    }
+    .certificates{
+        justify-content: center;
+    }
+  }

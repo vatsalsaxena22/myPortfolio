@@ -4,13 +4,14 @@
     <!-- Meta Data -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- Title And Favicon -->
     <title>Vatsal Saxena | Portfolio</title>
     <link rel="shortcut icon" href="images/Profile.jpg" type="image/x-icon" />
-    
+
     <!-- CSS and Icon -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./previous_versions/versions.css" />
     <link
       rel="stylesheet"
@@ -184,13 +185,23 @@
     <div class="experience-body" id="nav-ex">
       <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
       <div class="experiences">
-        <h1>
-          Front-End Developer Intern at
+        <h2>
+          Full Stack Developer at
+          <a href="https://www.enkidu.in/" target="_blank"
+            >Enkidu Technologies Pvt. Ltd.</a
+          >
+        </h2>
+        <h3>July 2024 - Till Now (Full Time)</h3>
+      </div>
+
+      <div class="experiences-ex">
+        <h2>
+          MERN Stack Developer Intern at
           <a href="https://www.cantechnologies.co.in/" target="_blank"
             >CAN Technologies Pvt. Ltd.</a
           >
-        </h1>
-        <h3>March 2024 - Till Now (Full Time)</h3>
+        </h2>
+        <h3>March 2024 - July 2024</h3>
       </div>
     </div>
 
@@ -287,18 +298,12 @@
 
     <!-- JavaScripts -->
     <script src="./previous_versions/versions.js"></script>
-    <script src="./data/skills.js"></script>
-    <script src="./data/certificate.js"></script>
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
     <!-- Typed.js Starts -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed("#element", {
-        strings: [
-          "Web Developer",
-          "Programmer",
-          "MERN Stack Developer",
-        ],
+        strings: ["Full Stack Developer", "Programmer"],
         typeSpeed: 75,
         loop: true,
       });
