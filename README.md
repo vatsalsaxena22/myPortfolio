@@ -6,7 +6,8 @@ And this is my Portfolio Website.
 - Visit my Portfolio @ "https://vatsalsaxena22.github.io/myPortfolio/"
 
 # Experience
-  * *Frontend Developer* at CAN Technologies Pvt. Ltd.
+  * *Full Stack Developer* at Enkidu Technologies Pvt. Ltd.
+  * *MERN Stack Developer* at CAN Technologies Pvt. Ltd.
  
 # Skills
   * HTML/HTML5
