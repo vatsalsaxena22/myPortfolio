@@ -59,6 +59,12 @@
         "image": "mongo.png",
         "alt": "mongoDB",
         "animation": "mirror"
+      },
+      {
+        "skillName": "WordPress",
+        "image": "wordpress.jpg",
+        "alt": "WordPress",
+        "animation": "mirror"
       }
     ]
   }

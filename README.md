@@ -3,11 +3,11 @@ A *MERN Stack Developer*
 And this is my Portfolio Website.
 
 
-- Visit my Portfolio @ "https://vatsalsaxena22.github.io/myPortfolio/"
+- Visit my [Portfolio](https://vatsalsaxena22.github.io/myPortfolio/)
 
 # Experience
-  * *Full Stack Developer* at Enkidu Technologies Pvt. Ltd.
-  * *MERN Stack Developer* at CAN Technologies Pvt. Ltd.
+  * *Full Stack Developer* at [Enkidu Technologies Pvt. Ltd](https://www.enkidu.in/).
+  * *MERN Stack Developer* at [CAN Technologies Pvt. Ltd](https://www.cantechnologies.co.in/).
  
 # Skills
   * HTML/HTML5
@@ -20,6 +20,7 @@ And this is my Portfolio Website.
   * Node.js
   * Express.js
   * mongoDB
+  * WordPress
   <!-- * Redux -->
   <!-- * electron -->
   
